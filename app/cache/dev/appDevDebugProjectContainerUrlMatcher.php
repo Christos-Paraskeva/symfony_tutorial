@@ -208,9 +208,19 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::indexAction',  '_route' => 'event',);
         }
 
+        // upcoming
+        if ('/upcoming' === $pathinfo) {
+            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::upcomingEvents',  '_route' => 'upcoming',);
+        }
+
         // yoda_event_report_showallevents
         if ('/events/report/showAllEvents.csv' === $pathinfo) {
             return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\ReportController::showAllEventsAction',  '_route' => 'yoda_event_report_showallevents',);
+        }
+
+        // login_form
+        if ('/login' === $pathinfo) {
+            return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_form',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

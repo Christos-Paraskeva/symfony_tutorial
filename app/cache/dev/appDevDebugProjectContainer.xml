@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="EventBundle">Yoda\EventBundle\EventBundle</parameter>
+      <parameter key="UserBundle">Yoda\UserBundle\UserBundle</parameter>
       <parameter key="DoctrineFixturesBundle">Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle</parameter>
       <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -68,6 +69,11 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle</parameter>
         <parameter key="namespace">Yoda\EventBundle</parameter>
+      </parameter>
+      <parameter key="UserBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle</parameter>
+        <parameter key="namespace">Yoda\UserBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -742,6 +748,9 @@
     <service id="event_report_manager" class="Yoda\EventBundle\Reporting\EventReportManager">
       <argument type="service" id="doctrine.orm.default_entity_manager"/>
       <argument type="service" id="router"/>
+    </service>
+    <service id="twig.event_extension" class="Yoda\EventBundle\Twig\EventExtension">
+      <tag name="twig.extension"/>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -2318,6 +2327,9 @@
         </argument>
       </argument>
       <call method="addExtension">
+        <argument type="service" id="twig.event_extension"/>
+      </call>
+      <call method="addExtension">
         <argument type="service">
           <service class="Symfony\Bridge\Twig\Extension\LogoutUrlExtension" public="false">
             <tag name="twig.extension"/>
@@ -2755,6 +2767,16 @@
       <argument type="service">
         <service class="Symfony\Bridge\Doctrine\ContainerAwareEventManager" public="false">
           <argument type="service" id="service_container"/>
+          <call method="addEventSubscriber">
+            <argument type="service">
+              <service class="Gedmo\Timestampable\TimestampableListener" public="false">
+                <tag name="doctrine.event_subscriber" connection="default"/>
+                <call method="setAnnotationReader">
+                  <argument type="service" id="annotation_reader"/>
+                </call>
+              </service>
+            </argument>
+          </call>
           <call method="addEventSubscriber">
             <argument type="service">
               <service class="Gedmo\Sluggable\SluggableListener" public="false">
@@ -3388,6 +3410,10 @@
       <call method="addPath">
         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle/Resources/views</argument>
         <argument>Event</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle/Resources/views</argument>
+        <argument>User</argument>
       </call>
       <call method="addPath">
         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

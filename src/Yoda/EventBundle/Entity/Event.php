@@ -54,7 +54,16 @@ class Event
      * @Gedmo\Slug(fields={"name"}, updatable=false)
      * @ORM\Column(length=255, unique=true)
      */
-    protected $slug;
+    private $slug;
+
+    /**
+     * @Gedmo\Timestampable(on="create") * @ORM\Column(type="datetime")
+     */
+    private $createdAt;
+    /**
+     * @Gedmo\Timestampable(on="update") * @ORM\Column(type="datetime")
+     */
+    private $updatedAt;
 
 
     /**
@@ -168,4 +177,18 @@ class Event
     {
         $this->slug = $slug;
     }
+
+    /**
+     * @return \DateTime */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+    /**
+     * @return \DateTime */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
 }
