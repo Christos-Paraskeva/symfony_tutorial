@@ -218,9 +218,25 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\ReportController::showAllEventsAction',  '_route' => 'yoda_event_report_showallevents',);
         }
 
-        // login_form
-        if ('/login' === $pathinfo) {
-            return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_form',);
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login_form
+                if ('/login' === $pathinfo) {
+                    return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_form',);
+                }
+
+                // login_check
+                if ('/login_check' === $pathinfo) {
+                    return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginCheckAction',  '_route' => 'login_check',);
+                }
+
+            }
+
+            // logout
+            if ('/logout' === $pathinfo) {
+                return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::logoutAction',  '_route' => 'logout',);
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

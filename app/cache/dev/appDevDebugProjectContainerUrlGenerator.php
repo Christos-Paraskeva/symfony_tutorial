@@ -48,6 +48,8 @@ class appDevDebugProjectContainerUrlGenerator extends Symfony\Component\Routing\
         'upcoming' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::upcomingEvents',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/upcoming',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'yoda_event_report_showallevents' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Yoda\\EventBundle\\Controller\\ReportController::showAllEventsAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/events/report/showAllEvents.csv',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'login_form' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'login_check' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginCheckAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login_check',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'logout' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::logoutAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/logout',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }
