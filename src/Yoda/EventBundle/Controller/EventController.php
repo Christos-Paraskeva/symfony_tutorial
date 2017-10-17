@@ -9,6 +9,9 @@ use Yoda\EventBundle\Entity\Event;
 use Yoda\EventBundle\Form\EventType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
  * Event controller.
@@ -92,10 +95,12 @@ class EventController extends Controller
 
     /**
      * Displays a form to create a new Event entity.
-     *
+     * @Security("has_role('ROLE_USER')")
      */
     public function newAction()
     {
+//        $this->enforceUserSecurity();
+
         $entity = new Event();
         $form   = $this->createCreateForm($entity);
 
@@ -129,10 +134,12 @@ class EventController extends Controller
 
     /**
      * Displays a form to edit an existing Event entity.
-     *
+     * @Security("has_role('ROLE_USER')")
      */
     public function editAction($id)
     {
+//        $this->enforceUserSecurity();
+
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('EventBundle:Event')->find($id);
@@ -155,11 +162,13 @@ class EventController extends Controller
     * Creates a form to edit a Event entity.
     *
     * @param Event $entity The entity
-    *
+    * @Security("has_role('ROLE_USER')")
     * @return \Symfony\Component\Form\Form The form
     */
     private function createEditForm(Event $entity)
     {
+//        $this->enforceUserSecurity();
+
         $form = $this->createForm(new EventType(), $entity, array(
             'action' => $this->generateUrl('event_update', array('id' => $entity->getId())),
             'method' => 'PUT',
@@ -171,10 +180,12 @@ class EventController extends Controller
     }
     /**
      * Edits an existing Event entity.
-     *
+     * @Security("has_role('ROLE_USER')")
      */
     public function updateAction(Request $request, $id)
     {
+//        $this->enforceUserSecurity();
+
         $em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('EventBundle:Event')->find($id);
@@ -201,10 +212,12 @@ class EventController extends Controller
     }
     /**
      * Deletes a Event entity.
-     *
+     * @Security("has_role('ROLE_USER')")
      */
     public function deleteAction(Request $request, $id)
     {
+//        $this->enforceUserSecurity();
+
         $form = $this->createDeleteForm($id);
         $form->handleRequest($request);
 
@@ -239,4 +252,15 @@ class EventController extends Controller
             ->getForm()
         ;
     }
+
+    // using annotation for security instead
+
+//    private function enforceUserSecurity()
+//    {
+//        $securityContext = $this->container->get('security.context');
+//        if (!$securityContext->isGranted('ROLE_USER')) {
+//            throw new AccessDeniedException('Need ROLE_USER');
+//        }
+//    }
+
 }
