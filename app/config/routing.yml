@@ -3,5 +3,5 @@ event:
     prefix:   /
 
 user_routes:
-  resource: "@UserBundle/Controller"
-  type: annotation
+    resource: "@UserBundle/Controller"
+    type: annotation

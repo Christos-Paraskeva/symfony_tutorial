@@ -218,6 +218,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\ReportController::showAllEventsAction',  '_route' => 'yoda_event_report_showallevents',);
         }
 
+        // user_register
+        if ('/register' === $pathinfo) {
+            return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\RegisterController::registerAction',  '_route' => 'user_register',);
+        }
+
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {
                 // login_form
