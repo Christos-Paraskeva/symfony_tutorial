@@ -12,18 +12,5 @@ use Doctrine\ORM\EntityRepository;
  */
 class EventRepository extends EntityRepository
 {
-    /**
-     * @return Event[]
-     */
-    public function getAllEvents()
-    {
-        var_dump('hello');
 
-
-//        return $this->createQueryBuilder('e')
-//            ->andWhere('e.createdAt > :since')
-//            ->setParameter('since', new \DateTime('24 Hours Ago'))
-//            ->getQuery()
-//            ->execute();
-    }
 }

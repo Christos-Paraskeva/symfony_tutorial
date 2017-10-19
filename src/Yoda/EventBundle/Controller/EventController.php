@@ -31,6 +31,10 @@ class EventController extends Controller
 
         $entities = $em->getRepository('EventBundle:Event')->findAll();
 
+//        can query using custom function from user repository
+//        $userRepo = $em->getRepository('UserBundle:User');
+//        var_dump($userRepo->findOneByUsernameOrEmail('wayne'));die;
+
         return array(
             'entities' => $entities,
         );
