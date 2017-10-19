@@ -192,7 +192,7 @@ class appDevDebugProjectContainer extends Container
             'security.role_hierarchy' => 'getSecurity_RoleHierarchyService',
             'security.secure_random' => 'getSecurity_SecureRandomService',
             'security.token_storage' => 'getSecurity_TokenStorageService',
-            'security.user.provider.concrete.in_memory' => 'getSecurity_User_Provider_Concrete_InMemoryService',
+            'security.user.provider.concrete.database_users' => 'getSecurity_User_Provider_Concrete_DatabaseUsersService',
             'security.user_checker.secured_area' => 'getSecurity_UserChecker_SecuredAreaService',
             'security.validator.user_password' => 'getSecurity_Validator_UserPasswordService',
             'sensio_distribution.webconfigurator' => 'getSensioDistribution_WebconfiguratorService',
@@ -2034,7 +2034,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_EncoderFactoryService()
     {
-        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('Symfony\\Component\\Security\\Core\\User\\User' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\PlaintextPasswordEncoder', 'arguments' => array(0 => false))));
+        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('Yoda\\UserBundle\\Entity\\User' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13))));
     }
 
     /**
@@ -2075,7 +2075,7 @@ class appDevDebugProjectContainer extends Container
         $k = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $h, array(), $a);
         $k->setOptions(array('login_path' => 'login_form', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'));
 
-        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($g, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('security.user.provider.concrete.in_memory')), 'secured_area', $a, $c), 2 => $i, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, new \Symfony\Component\Security\Http\Session\SessionAuthenticationStrategy('migrate'), $h, 'secured_area', $j, $k, array('check_path' => 'login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $a, $c, NULL), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59e62c991e4438.96995990', $a, $f), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $g, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $h, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $h, 'login_form', false), NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($g, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $this->get('security.user.provider.concrete.database_users')), 'secured_area', $a, $c), 2 => $i, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, new \Symfony\Component\Security\Http\Session\SessionAuthenticationStrategy('migrate'), $h, 'secured_area', $j, $k, array('check_path' => 'login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $a, $c, NULL), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59e88301945767.22840056', $a, $f), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $g, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $h, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $h, 'login_form', false), NULL, NULL, $a, false));
     }
 
     /**
@@ -3152,7 +3152,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.in_memory'), $this->get('security.user_checker.secured_area'), 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59e62c991e4438.96995990')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.database_users'), $this->get('security.user_checker.secured_area'), 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59e88301945767.22840056')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 
@@ -3194,18 +3194,13 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
-     * Gets the private 'security.user.provider.concrete.in_memory' shared service.
+     * Gets the private 'security.user.provider.concrete.database_users' shared service.
      *
-     * @return \Symfony\Component\Security\Core\User\InMemoryUserProvider
+     * @return \Symfony\Bridge\Doctrine\Security\User\EntityUserProvider
      */
-    protected function getSecurity_User_Provider_Concrete_InMemoryService()
+    protected function getSecurity_User_Provider_Concrete_DatabaseUsersService()
     {
-        $this->services['security.user.provider.concrete.in_memory'] = $instance = new \Symfony\Component\Security\Core\User\InMemoryUserProvider();
-
-        $instance->createUser(new \Symfony\Component\Security\Core\User\User('user', 'userpass', array(0 => 'ROLE_USER')));
-        $instance->createUser(new \Symfony\Component\Security\Core\User\User('admin', 'adminpass', array(0 => 'ROLE_ADMIN')));
-
-        return $instance;
+        return $this->services['security.user.provider.concrete.database_users'] = new \Symfony\Bridge\Doctrine\Security\User\EntityUserProvider($this->get('doctrine'), 'UserBundle:User', 'username', NULL);
     }
 
     /**

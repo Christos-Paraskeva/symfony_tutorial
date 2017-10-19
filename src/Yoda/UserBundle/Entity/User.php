@@ -4,6 +4,7 @@ namespace Yoda\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 
 /**
  * User
@@ -11,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table(name="yoda_user")
  * @ORM\Entity(repositoryClass="Yoda\UserBundle\Entity\UserRepository")
  */
-class User implements UserInterface
+class User implements AdvancedUserInterface
 {
     /**
      * @var integer
@@ -32,9 +33,26 @@ class User implements UserInterface
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=20)
+     * @ORM\Column(name="password", type="string", length=200)
      */
     private $password;
+
+    /**
+     * @ORM\Column(type="json_array")
+     */
+    private $roles = array();
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(type="boolean")
+     */
+    private $isActive = true;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $email;
 
 
     /**
@@ -113,7 +131,18 @@ class User implements UserInterface
      */
     public function getRoles()
     {
-        return array('ROLE_USER');
+        $roles = $this->roles;
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    public function setRoles(array $roles)
+    {
+        $this->roles = $roles;
+
+        // allows for chaining
+        return $this;
     }
 
     /**
@@ -138,5 +167,60 @@ class User implements UserInterface
     {
         // TODO: Implement eraseCredentials() method.
     }
-}
 
+    public function getIsActive()
+    {
+        return $this->isActive;
+    }
+
+    public function setIsActive($isActive)
+    {
+        $this->isActive = $isActive;
+        return $this;
+    }
+
+    public function isAccountNonExpired()
+    {
+        return true;
+    }
+
+    public function isAccountNonLocked()
+    {
+        return true;
+    }
+
+    public function isCredentialsNonExpired()
+    {
+        return true;
+    }
+
+    public function isEnabled()
+    {
+        return $this->getIsActive();
+    }
+
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return User
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+}

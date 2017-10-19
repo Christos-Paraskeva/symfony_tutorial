@@ -2,88 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe09be12-c05f-4abd-bd6a-09fadfa7a0a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3c/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/3c/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/50/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/50/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8e/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8e/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b0/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b0/5b596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0e/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/0e/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8b/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f67696e436865636b416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8b/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f67696e436865636b416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8f/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f676f7574416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/8f/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f676f7574416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b1/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f67696e416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b1/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5365637572697479436f6e74726f6c6c6572236c6f67696e416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/1d/5b596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/1d/5b596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.map" afterPath="$PROJECT_DIR$/app/cache/dev/classes.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/04/046836c2b071299ab2dfd8aca66a1579c39f8d50a84f6bfcce9496655fec5bdf.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/04/046836c2b071299ab2dfd8aca66a1579c39f8d50a84f6bfcce9496655fec5bdf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0b/0b4fb7ac6869579b26651525eaa4617d4a4a10f7834a53d0e0f24f43ea75139e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0b/0b4fb7ac6869579b26651525eaa4617d4a4a10f7834a53d0e0f24f43ea75139e.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0b/0b60c60c096efe6fe94f217f64a07ff03dd5a9f0bc7ecd8ddd331350854e2411.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0b/0b60c60c096efe6fe94f217f64a07ff03dd5a9f0bc7ecd8ddd331350854e2411.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0c/0c0421e9702b6820e68899fb650679a02f0478b47d2a90dd6511b4e010a00039.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0c/0c0421e9702b6820e68899fb650679a02f0478b47d2a90dd6511b4e010a00039.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0e/0ed33e42612a68cb02e13e8d6f11855f2beb3185cd91623383bbdf13d743f532.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/0e/0ed33e42612a68cb02e13e8d6f11855f2beb3185cd91623383bbdf13d743f532.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/17/17e46448ad1701399dff44c593300353018ffa8b20307394c3250d4001879698.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/17/17e46448ad1701399dff44c593300353018ffa8b20307394c3250d4001879698.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1a/1ab058101772eaed44eac24c5c5eb20602a9e8bff0a53d256bb8e06ad27cc4a6.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1a/1ab058101772eaed44eac24c5c5eb20602a9e8bff0a53d256bb8e06ad27cc4a6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/21/213bf274344d76b831244c8d71029d8632b3fb27bf326e41ab247412ddd75e86.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/21/213bf274344d76b831244c8d71029d8632b3fb27bf326e41ab247412ddd75e86.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/25/2528df5f585970b838adfd5e239cc664cd3f8aa3931c700ff5d357925f64aa1f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/25/2528df5f585970b838adfd5e239cc664cd3f8aa3931c700ff5d357925f64aa1f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/42/429b632daaacf8a89e24d15552b6c86c91631cd63c447f5b2e1f252be4c8cde7.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/42/429b632daaacf8a89e24d15552b6c86c91631cd63c447f5b2e1f252be4c8cde7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/45/451affdfb2ed36566ef13188cf19ebf0836d51842debf41c3f373dc7efcbba81.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/45/451affdfb2ed36566ef13188cf19ebf0836d51842debf41c3f373dc7efcbba81.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/47/47a4ad1f305c07f8b063694c36d2a7b11dfd3c334ef6ba78dc3fcd5d21896dc2.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/47/47a4ad1f305c07f8b063694c36d2a7b11dfd3c334ef6ba78dc3fcd5d21896dc2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4b/4bdd5242f9e11901c6b0c17d078d933200ae652a4505ab1ca3d7c347d93cdf2f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4b/4bdd5242f9e11901c6b0c17d078d933200ae652a4505ab1ca3d7c347d93cdf2f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4f/4f9312897efabbe3205df6d919bbc219d37cfb7c6461eeae7c4a47d15e847405.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4f/4f9312897efabbe3205df6d919bbc219d37cfb7c6461eeae7c4a47d15e847405.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/59/591b9d690aeab95d32444f8fa9a7b74b32b50fe7d3e75840e2443005bc93b931.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/59/591b9d690aeab95d32444f8fa9a7b74b32b50fe7d3e75840e2443005bc93b931.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5a/5ae332a10237b8414725dd0e01f9f39e9fa9877c13ecdce8b60cd6b580b2c7e2.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/5a/5ae332a10237b8414725dd0e01f9f39e9fa9877c13ecdce8b60cd6b580b2c7e2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/61/616a12bf90807e8b9af0a745cf9fc140f6af26c35f5a407c146dfe4bb6b71734.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/61/616a12bf90807e8b9af0a745cf9fc140f6af26c35f5a407c146dfe4bb6b71734.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/68/682064cfa097daa803c2e16a238b5c9eded1acaf93f39ea1a92d323d277efa25.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/68/682064cfa097daa803c2e16a238b5c9eded1acaf93f39ea1a92d323d277efa25.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/71/71a38fcfd6053fcefea376a37da627a2af61fcc1ec5ae4e308052bf665a3406b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/71/71a38fcfd6053fcefea376a37da627a2af61fcc1ec5ae4e308052bf665a3406b.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/73/730e0cc4054ee3dfb72a456fce4586af72cacb27aeaf1dc80878e6bc74ad998d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/73/730e0cc4054ee3dfb72a456fce4586af72cacb27aeaf1dc80878e6bc74ad998d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/75/75fb965c9b2af890731470842830ef9b957f89e6b674002958f05d1e8856d9bc.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/75/75fb965c9b2af890731470842830ef9b957f89e6b674002958f05d1e8856d9bc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/77/77818cb6a299473e72a3584cd132d3f01bb7f8c793307f04f46b87df437b81bc.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/77/77818cb6a299473e72a3584cd132d3f01bb7f8c793307f04f46b87df437b81bc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/78/78764c09d8bc42b36c9d9fc0ad9588c8b67f096eece39c695173e3a7e4347c60.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/78/78764c09d8bc42b36c9d9fc0ad9588c8b67f096eece39c695173e3a7e4347c60.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/78/78ba15596b7955268b548588ec5e080ed8fa370452ee04981622644463202aa1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/78/78ba15596b7955268b548588ec5e080ed8fa370452ee04981622644463202aa1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7a/7afb1d5691393f61fef114946372a1e72810a1fe47f75ddff72200ad0ac9ae89.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/7a/7afb1d5691393f61fef114946372a1e72810a1fe47f75ddff72200ad0ac9ae89.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/80/8008c8c2753773b95e243122ad32b343cfa2297ae894bcb8fd3d7bd25d0c76db.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/80/8008c8c2753773b95e243122ad32b343cfa2297ae894bcb8fd3d7bd25d0c76db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/85/85bcfd4ba58885453a69f370552b761f0ef90a98d792db943dba510d6d76096a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/85/85bcfd4ba58885453a69f370552b761f0ef90a98d792db943dba510d6d76096a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/85/85fb445d911804f92d5f83963c8620207d10d636bcacea2e40339547cdfecfe3.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/85/85fb445d911804f92d5f83963c8620207d10d636bcacea2e40339547cdfecfe3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/89/8945eeb9dbebb7b06b90c124224a9510af592cd3897faae84b7a4f4abe96f84c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/89/8945eeb9dbebb7b06b90c124224a9510af592cd3897faae84b7a4f4abe96f84c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8c/8c291ef67cbe1ba12398faddb2172d59ea71c697280178473c471193080e2a85.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8c/8c291ef67cbe1ba12398faddb2172d59ea71c697280178473c471193080e2a85.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8d/8d7501d4c329670615ff956761ed45acac8a5e0da521de7ec768d57fb9d3742d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8d/8d7501d4c329670615ff956761ed45acac8a5e0da521de7ec768d57fb9d3742d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8e/8ead33a248fe858a5e2b51a53d1a7a1a681fefa6bb3b8076cdff18c7960a17a1.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8e/8ead33a248fe858a5e2b51a53d1a7a1a681fefa6bb3b8076cdff18c7960a17a1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/94/9491b9b7d5357f02357d441754b4fb8e53c679b5cfcad7d91438d94a288bd2a5.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/94/9491b9b7d5357f02357d441754b4fb8e53c679b5cfcad7d91438d94a288bd2a5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bf/bfad646d66f67c09ae3b8e213f9c14b6e0bb19aedfed29be591f29fb3d508777.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/bf/bfad646d66f67c09ae3b8e213f9c14b6e0bb19aedfed29be591f29fb3d508777.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c2/c2bbce889efe430e18717d27ae4fc43e0f9a4a45c5c3b0e0816a2fb95a46e496.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c2/c2bbce889efe430e18717d27ae4fc43e0f9a4a45c5c3b0e0816a2fb95a46e496.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c4/c4fa02f333b9f7a93924106d9146c62ff73deeda96c67f5c6f808b608743e88c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/c4/c4fa02f333b9f7a93924106d9146c62ff73deeda96c67f5c6f808b608743e88c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ce/cea722b1815d0c744827226c63f0da263e194f4610c5d0f43c0e80a1ee1af311.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ce/cea722b1815d0c744827226c63f0da263e194f4610c5d0f43c0e80a1ee1af311.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/cf/cf3d0f3298da7d8985cad7fb5b67b6a2b6eac69ecd0bb26c30b8884a8d8b6b38.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/cf/cf3d0f3298da7d8985cad7fb5b67b6a2b6eac69ecd0bb26c30b8884a8d8b6b38.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d0/d0c1c466a66de8889b8f0f2fd3b23b317dab9bca0a4f4137173c83817104ba14.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d0/d0c1c466a66de8889b8f0f2fd3b23b317dab9bca0a4f4137173c83817104ba14.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d0/d0c76f119f7eb6316728e9c6bb12a7adcb01e2c5a2b389016223bd04c41a5652.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d0/d0c76f119f7eb6316728e9c6bb12a7adcb01e2c5a2b389016223bd04c41a5652.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/f1f380041b75c536dc800acf75c4a684cec60a30cd61c2d581af3427ea2b4ebf.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f1/f1f380041b75c536dc800acf75c4a684cec60a30cd61c2d581af3427ea2b4ebf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f4/f43b9b3890a0574853faeebb1910ef223322da90af437973d5933165bb59dfca.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f4/f43b9b3890a0574853faeebb1910ef223322da90af437973d5933165bb59dfca.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f9/f9a5b4d71c4f8554df0c889d2fa65469119d38bfceb70de4550c9d93c308b680.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/f9/f9a5b4d71c4f8554df0c889d2fa65469119d38bfceb70de4550c9d93c308b680.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fa/fa2a318e2c2fe51538b9b9b76916307548aa277cfb6f6b01b336ebacb1c7020d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fa/fa2a318e2c2fe51538b9b9b76916307548aa277cfb6f6b01b336ebacb1c7020d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fa/fac1280000d69f74093339a6dd098f0d22100cc6c68d2a95fc3773513f6c6adf.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fa/fac1280000d69f74093339a6dd098f0d22100cc6c68d2a95fc3773513f6c6adf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fe/fea2231f22bf7df1ccdd3cbb281c58e07dff994d37e0c9d022ea97140d18566e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/fe/fea2231f22bf7df1ccdd3cbb281c58e07dff994d37e0c9d022ea97140d18566e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1f/1f3165e1ee117a0d28d3945ba23d61429f4a2793b6441092d4602ab9f710d16e.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/1f/1f3165e1ee117a0d28d3945ba23d61429f4a2793b6441092d4602ab9f710d16e.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/34/348d3fa269e6b904d7119658e0e0f2c845479513dc7d633c01dd504d65a84cc6.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/34/348d3fa269e6b904d7119658e0e0f2c845479513dc7d633c01dd504d65a84cc6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4c/4c359c912f418a78f2fd07534cdbf1f0f9db3eb59b34479bf0db68cee42c3439.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4c/4c359c912f418a78f2fd07534cdbf1f0f9db3eb59b34479bf0db68cee42c3439.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5f/5f3c6427ee979f4683ac2f6b6b163ac54032c47085f418b26f7f529f4cc99352.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/5f/5f3c6427ee979f4683ac2f6b6b163ac54032c47085f418b26f7f529f4cc99352.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/66/6694ab53bd3af3826964c85e49f5133645ed8ca094d22db24c00985b235441cb.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/66/6694ab53bd3af3826964c85e49f5133645ed8ca094d22db24c00985b235441cb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/70/70befd2109f873888e1f9a5036f08c9006449e406463b07ed0474a909f6d07c8.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/70/70befd2109f873888e1f9a5036f08c9006449e406463b07ed0474a909f6d07c8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/8c/8c9856af0dc575f3f0bf21a341d9a66081c86ba6481839ca6f2cfdf48385717b.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/8c/8c9856af0dc575f3f0bf21a341d9a66081c86ba6481839ca6f2cfdf48385717b.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a0/a002bbefae56a6e0552416a8298ce4027fb2c8213da379d6c5c79e3d73bba16f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/a0/a002bbefae56a6e0552416a8298ce4027fb2c8213da379d6c5c79e3d73bba16f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d3/d3c28d424894ab9def2b8d756bb52912282a8252a3a9a125adf83136ff189d9a.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/d3/d3c28d424894ab9def2b8d756bb52912282a8252a3a9a125adf83136ff189d9a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/dd/dd4bf373d87f101ca24c9542d8ca8b0385d8a06be042de6d23b9889213fafa52.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/dd/dd4bf373d87f101ca24c9542d8ca8b0385d8a06be042de6d23b9889213fafa52.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e5/e53f00a36f7ecba1f0e09e15e652e314d414476708798627909e0dfa204a8411.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/e5/e53f00a36f7ecba1f0e09e15e652e314d414476708798627909e0dfa204a8411.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,8 +44,8 @@
           <file leaf-file-name="EventReportManager.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Reporting/EventReportManager.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-82">
-                  <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+                <state relative-caret-position="275">
+                  <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
                   <folding>
                     <element signature="e#46#77#0#PHP" expanded="true" />
                   </folding>
@@ -139,8 +84,8 @@
           <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+                <state relative-caret-position="-2597">
+                  <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
                   <folding>
                     <element signature="e#42#74#0#PHP" expanded="true" />
                   </folding>
@@ -148,62 +93,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserBundle.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/UserBundle.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/UserRepository.php">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig">
+          <file leaf-file-name="LoadUsers.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/layout.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/new.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="249">
+                  <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+                  <folding>
+                    <element signature="e#52#102#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -211,8 +118,8 @@
           <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/config/security.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+                <state relative-caret-position="68">
+                  <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -243,15 +150,16 @@
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/UserBundle.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" />
       </list>
     </option>
   </component>
@@ -338,7 +246,16 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
@@ -390,12 +307,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507886903378</updated>
       <workItem from="1507886905389" duration="188000" />
-      <workItem from="1507887179607" duration="34550000" />
+      <workItem from="1507887179607" duration="39150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34738000" />
+    <option name="totallyTimeSpent" value="39338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -644,14 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/ReportController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -662,29 +571,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Reporting/EventReportManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#46#77#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,20 +663,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Reporting/EventReportManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#46#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="-2597">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="e#52#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
