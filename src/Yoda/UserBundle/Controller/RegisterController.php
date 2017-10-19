@@ -21,7 +21,7 @@ class RegisterController extends Controller
             ->getForm()
         ;
 
-        return array('form' => $form);
+        return array('form' => $form->createView());
     }
 
 }

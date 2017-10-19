@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe09be12-c05f-4abd-bd6a-09fadfa7a0a3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/public/css/main.css" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,40 +39,6 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
-                  <folding>
-                    <element signature="e#47#92#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EventRepository.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SecurityController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#46#105#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -86,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="81">
-                  <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+                <state relative-caret-position="216">
+                  <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
                   <folding>
                     <element signature="e#46#103#0#PHP" expanded="true" />
                   </folding>
@@ -98,11 +63,62 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="false">
+          <file leaf-file-name="logo_symfony.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/logo_symfony.png">
+              <provider selected="true" editor-type-id="images">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="grey_magnifier.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/grey_magnifier.png">
+              <provider selected="true" editor-type-id="images">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blue_picto_more.gif" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/blue_picto_more.gif">
+              <provider selected="true" editor-type-id="images">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="event.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/event/css/event.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="events.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/event/css/events.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/bundles/event/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state relative-caret-position="157">
+                  <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -114,40 +130,6 @@
                 <state relative-caret-position="102">
                   <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoadUsers.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#52#102#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/UserRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="59">
-                  <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#42#76#0#PHP" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -188,8 +170,9 @@
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
+        <option value="$PROJECT_DIR$/web/bundles/event/css/main.css" />
+        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
       </list>
     </option>
   </component>
@@ -345,6 +328,60 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Security" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="event" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="event" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -387,12 +424,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507886903378</updated>
       <workItem from="1507886905389" duration="188000" />
-      <workItem from="1507887179607" duration="43290000" />
+      <workItem from="1507887179607" duration="43867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43478000" />
+    <option name="totallyTimeSpent" value="44055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -428,14 +465,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/episode2/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/console">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -797,21 +826,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/logo_symfony.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/grey_magnifier.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/framework/images/blue_picto_more.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/event/css/event.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/web/bundles/event/css/events.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-          <folding>
-            <element signature="e#46#103#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/event/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

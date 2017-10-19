@@ -22,20 +22,20 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_df1b8ea408d38de76e1dfa9931873de94328b24c586071f4f376eec6798c64e7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_df1b8ea408d38de76e1dfa9931873de94328b24c586071f4f376eec6798c64e7->enter($__internal_df1b8ea408d38de76e1dfa9931873de94328b24c586071f4f376eec6798c64e7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Register:register.html.twig"));
+        $__internal_8e1da83c103a66b93edd8744dbfbc6b8ace557422d9713874f29d361c4b15668 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8e1da83c103a66b93edd8744dbfbc6b8ace557422d9713874f29d361c4b15668->enter($__internal_8e1da83c103a66b93edd8744dbfbc6b8ace557422d9713874f29d361c4b15668_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Register:register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_df1b8ea408d38de76e1dfa9931873de94328b24c586071f4f376eec6798c64e7->leave($__internal_df1b8ea408d38de76e1dfa9931873de94328b24c586071f4f376eec6798c64e7_prof);
+        $__internal_8e1da83c103a66b93edd8744dbfbc6b8ace557422d9713874f29d361c4b15668->leave($__internal_8e1da83c103a66b93edd8744dbfbc6b8ace557422d9713874f29d361c4b15668_prof);
 
     }
 
     // line 3
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_dcaab086b683593f46e1c5665018dc103dfddef973f448dd3cbf29a4ab6f6105 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dcaab086b683593f46e1c5665018dc103dfddef973f448dd3cbf29a4ab6f6105->enter($__internal_dcaab086b683593f46e1c5665018dc103dfddef973f448dd3cbf29a4ab6f6105_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_7827b2518d27ef3a1a7757652d60b6cc34c64dab53fb72959b58059538897466 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7827b2518d27ef3a1a7757652d60b6cc34c64dab53fb72959b58059538897466->enter($__internal_7827b2518d27ef3a1a7757652d60b6cc34c64dab53fb72959b58059538897466_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 4
         echo "    ";
@@ -48,27 +48,46 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
         echo "\" />
 ";
         
-        $__internal_dcaab086b683593f46e1c5665018dc103dfddef973f448dd3cbf29a4ab6f6105->leave($__internal_dcaab086b683593f46e1c5665018dc103dfddef973f448dd3cbf29a4ab6f6105_prof);
+        $__internal_7827b2518d27ef3a1a7757652d60b6cc34c64dab53fb72959b58059538897466->leave($__internal_7827b2518d27ef3a1a7757652d60b6cc34c64dab53fb72959b58059538897466_prof);
 
     }
 
     // line 9
     public function block_body($context, array $blocks = array())
     {
-        $__internal_af85c68c2881ddf81d245a8f0b2c86ccbc55098cab8faf6ea5383f1dda9c2643 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_af85c68c2881ddf81d245a8f0b2c86ccbc55098cab8faf6ea5383f1dda9c2643->enter($__internal_af85c68c2881ddf81d245a8f0b2c86ccbc55098cab8faf6ea5383f1dda9c2643_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a56d6f285e34169748199c9096316c5500540e986fe21a88c331ec5562784f2a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a56d6f285e34169748199c9096316c5500540e986fe21a88c331ec5562784f2a->enter($__internal_a56d6f285e34169748199c9096316c5500540e986fe21a88c331ec5562784f2a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 10
         echo "    <section class=\"login\">
         <article>
             <h1>Register</h1>
+
+            <form action=\"";
+        // line 14
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_register");
+        echo "\" method=\"POST\">
+                ";
+        // line 15
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "username", array()), 'row');
+        echo "
+                ";
+        // line 16
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'row');
+        echo "
+                ";
+        // line 17
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "password", array()), 'row');
+        echo "
+                <input type=\"submit\" class=\"btn btn-primary pull-right\" value=\"Register!\" />
+            </form>
         </article>
 
     </section>
 
 ";
         
-        $__internal_af85c68c2881ddf81d245a8f0b2c86ccbc55098cab8faf6ea5383f1dda9c2643->leave($__internal_af85c68c2881ddf81d245a8f0b2c86ccbc55098cab8faf6ea5383f1dda9c2643_prof);
+        $__internal_a56d6f285e34169748199c9096316c5500540e986fe21a88c331ec5562784f2a->leave($__internal_a56d6f285e34169748199c9096316c5500540e986fe21a88c331ec5562784f2a_prof);
 
     }
 
@@ -84,7 +103,7 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
 
     public function getDebugInfo()
     {
-        return array (  62 => 10,  56 => 9,  47 => 6,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  80 => 17,  76 => 16,  72 => 15,  68 => 14,  62 => 10,  56 => 9,  47 => 6,  41 => 4,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -109,6 +128,13 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
     <section class=\"login\">
         <article>
             <h1>Register</h1>
+
+            <form action=\"{{ path('user_register') }}\" method=\"POST\">
+                {{ form_row(form.username) }}
+                {{ form_row(form.email) }}
+                {{ form_row(form.password) }}
+                <input type=\"submit\" class=\"btn btn-primary pull-right\" value=\"Register!\" />
+            </form>
         </article>
 
     </section>
