@@ -17,25 +17,29 @@ class RegisterController extends Controller
      */
     public function registerAction(Request $request)
     {
+        // can set some default data for form
+        $user = new User();
+        $user->setUsername('Christos');
+
         // refactor this out to a different file?
-        $form = $this->createFormBuilder()
+
+        $form = $this->createFormBuilder($user, array(
+            'data_class' => 'Yoda\UserBundle\Entity\User',
+        ))
             ->add('username', 'text')
             ->add('email', 'email')
             ->add('password', 'repeated', array(
                 'type' => 'password',
             ))
+
             ->getForm()
         ;
 
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $data = $form->getData();
-            $user = new User();
-            $user->setUsername($data['username']);
-            $user->setEmail($data['email']);
-
-            $user->setPassword($this->encodePassword($user, $data['password']));
+        if ($form->isValid()) {
+            $user = $form->getData();
+            $user->setPassword($this->encodePassword($user, $user->getPassword()));
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
