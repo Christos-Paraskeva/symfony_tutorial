@@ -34,6 +34,11 @@ class RegisterController extends Controller
             $em->persist($user);
             $em->flush();
 
+            $request->getSession()
+                ->getFlashBag()
+                ->add('success', 'Welcome to the Events Page');
+            ;
+
             return $this->redirectToRoute('event');
         }
 
