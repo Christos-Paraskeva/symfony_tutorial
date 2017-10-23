@@ -13,6 +13,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/48/5b596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/48/5b596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/62/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574526f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/62/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574526f6c65735d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6c/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574526f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6c/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574526f6c65735d5b315d.doctrinecache.data" />
@@ -73,8 +74,8 @@
           <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+                <state relative-caret-position="265">
+                  <caret line="58" column="13" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
                   <folding>
                     <element signature="e#42#74#0#PHP" expanded="true" />
                   </folding>
@@ -89,7 +90,7 @@
           <file leaf-file-name="RegisterFormType.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="246">
+                <state relative-caret-position="261">
                   <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
                   <folding>
                     <element signature="e#40#80#0#PHP" expanded="true" />
@@ -306,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55446000" />
+    <option name="totallyTimeSpent" value="55744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -710,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="261">
           <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
             <element signature="e#40#80#0#PHP" expanded="true" />
@@ -720,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="265">
+          <caret line="58" column="13" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
           </folding>

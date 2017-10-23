@@ -30,6 +30,7 @@ class User implements AdvancedUserInterface, Serializable
      * @var string
      * @ORM\Column(name="username", type="string", length=30)
      * @Assert\NotBlank(message="A valid Username must be entered")
+     * @Assert\Length(min=5, minMessage="Username must be at least 5 characters")
      */
     private $username;
 
@@ -54,6 +55,8 @@ class User implements AdvancedUserInterface, Serializable
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Email
      */
     private $email;
 
