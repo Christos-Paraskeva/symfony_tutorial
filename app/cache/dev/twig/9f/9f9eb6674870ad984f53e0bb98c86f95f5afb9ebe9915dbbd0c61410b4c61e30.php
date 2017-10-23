@@ -22,20 +22,20 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_abdf816be8fac1f82d501b98ae04f319ca29f375b0b22eea7d552333852474d0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_abdf816be8fac1f82d501b98ae04f319ca29f375b0b22eea7d552333852474d0->enter($__internal_abdf816be8fac1f82d501b98ae04f319ca29f375b0b22eea7d552333852474d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Register:register.html.twig"));
+        $__internal_b6e85b04051530a42ba823f073015f2260f88a0c8fbdff063cc8c9b80dde78d5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b6e85b04051530a42ba823f073015f2260f88a0c8fbdff063cc8c9b80dde78d5->enter($__internal_b6e85b04051530a42ba823f073015f2260f88a0c8fbdff063cc8c9b80dde78d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "UserBundle:Register:register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_abdf816be8fac1f82d501b98ae04f319ca29f375b0b22eea7d552333852474d0->leave($__internal_abdf816be8fac1f82d501b98ae04f319ca29f375b0b22eea7d552333852474d0_prof);
+        $__internal_b6e85b04051530a42ba823f073015f2260f88a0c8fbdff063cc8c9b80dde78d5->leave($__internal_b6e85b04051530a42ba823f073015f2260f88a0c8fbdff063cc8c9b80dde78d5_prof);
 
     }
 
     // line 3
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_c34d6e6abdfca23f3f95ea442f9fed0264fafea02c057f4f08d45eb2ce4f6cdf = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c34d6e6abdfca23f3f95ea442f9fed0264fafea02c057f4f08d45eb2ce4f6cdf->enter($__internal_c34d6e6abdfca23f3f95ea442f9fed0264fafea02c057f4f08d45eb2ce4f6cdf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_84fc4c8632d1019c3f4f893a8243952077d70ffee16208a50035ca74cfd6c8a2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_84fc4c8632d1019c3f4f893a8243952077d70ffee16208a50035ca74cfd6c8a2->enter($__internal_84fc4c8632d1019c3f4f893a8243952077d70ffee16208a50035ca74cfd6c8a2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 4
         echo "    ";
@@ -48,15 +48,15 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
         echo "\" />
 ";
         
-        $__internal_c34d6e6abdfca23f3f95ea442f9fed0264fafea02c057f4f08d45eb2ce4f6cdf->leave($__internal_c34d6e6abdfca23f3f95ea442f9fed0264fafea02c057f4f08d45eb2ce4f6cdf_prof);
+        $__internal_84fc4c8632d1019c3f4f893a8243952077d70ffee16208a50035ca74cfd6c8a2->leave($__internal_84fc4c8632d1019c3f4f893a8243952077d70ffee16208a50035ca74cfd6c8a2_prof);
 
     }
 
     // line 9
     public function block_body($context, array $blocks = array())
     {
-        $__internal_69b7d93a36a66b23610cde0b26523eb3ef16917f8900a041a54cc9e4a102b692 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_69b7d93a36a66b23610cde0b26523eb3ef16917f8900a041a54cc9e4a102b692->enter($__internal_69b7d93a36a66b23610cde0b26523eb3ef16917f8900a041a54cc9e4a102b692_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_734c5a66a7ed065f11fbc33fc7c17f247cf7cfe915d0ac72028fdcc617344994 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_734c5a66a7ed065f11fbc33fc7c17f247cf7cfe915d0ac72028fdcc617344994->enter($__internal_734c5a66a7ed065f11fbc33fc7c17f247cf7cfe915d0ac72028fdcc617344994_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 10
         echo "    <section class=\"login\">
@@ -66,33 +66,32 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
             <form action=\"";
         // line 14
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("user_register");
-        echo "\" method=\"POST\">
+        echo "\" method=\"POST\" novalidate=\"novalidate\">
                 ";
         // line 15
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
         echo "
-
                 ";
-        // line 17
+        // line 16
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "username", array()), 'row');
         echo "
                 ";
-        // line 18
+        // line 17
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'row');
         echo "
                 ";
-        // line 19
+        // line 18
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "first", array()), 'row', array("label" => "Password"));
-        // line 21
+        // line 20
         echo "
                 ";
-        // line 22
+        // line 21
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "second", array()), 'row', array("label" => "Confirm Password"));
-        // line 24
+        // line 23
         echo "
 
                 ";
-        // line 26
+        // line 25
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
         echo "
 
@@ -104,7 +103,7 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
 
 ";
         
-        $__internal_69b7d93a36a66b23610cde0b26523eb3ef16917f8900a041a54cc9e4a102b692->leave($__internal_69b7d93a36a66b23610cde0b26523eb3ef16917f8900a041a54cc9e4a102b692_prof);
+        $__internal_734c5a66a7ed065f11fbc33fc7c17f247cf7cfe915d0ac72028fdcc617344994->leave($__internal_734c5a66a7ed065f11fbc33fc7c17f247cf7cfe915d0ac72028fdcc617344994_prof);
 
     }
 
@@ -120,7 +119,7 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
 
     public function getDebugInfo()
     {
-        return array (  96 => 26,  92 => 24,  90 => 22,  87 => 21,  85 => 19,  81 => 18,  77 => 17,  72 => 15,  68 => 14,  62 => 10,  56 => 9,  47 => 6,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  95 => 25,  91 => 23,  89 => 21,  86 => 20,  84 => 18,  80 => 17,  76 => 16,  72 => 15,  68 => 14,  62 => 10,  56 => 9,  47 => 6,  41 => 4,  35 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -146,9 +145,8 @@ class __TwigTemplate_caccd89dc29ceb4252c12f27136233408d8633ea016f16d7578f8330e3b
         <article>
             <h1>Register</h1>
 
-            <form action=\"{{ path('user_register') }}\" method=\"POST\">
+            <form action=\"{{ path('user_register') }}\" method=\"POST\" novalidate=\"novalidate\">
                 {{ form_errors(form) }}
-
                 {{ form_row(form.username) }}
                 {{ form_row(form.email) }}
                 {{ form_row(form.plainPassword.first, {

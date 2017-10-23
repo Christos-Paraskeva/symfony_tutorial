@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe09be12-c05f-4abd-bd6a-09fadfa7a0a3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/61/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c657223656e636f646550617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/61/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c657223656e636f646550617373776f72645d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/classes.php" afterPath="$PROJECT_DIR$/app/cache/dev/classes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +24,11 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="156">
-                  <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+                  <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                   <folding>
                     <element signature="e#46#103#0#PHP" expanded="true" />
                   </folding>
@@ -41,11 +36,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="false">
+          <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="245">
-                  <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+                <state relative-caret-position="143">
+                  <caret line="15" column="45" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="15" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -68,8 +63,8 @@
           <file leaf-file-name="RegisterFormType.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                <state relative-caret-position="246">
+                  <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
                   <folding>
                     <element signature="e#40#80#0#PHP" expanded="true" />
                   </folding>
@@ -132,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Service/User.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig" />
       </list>
     </option>
   </component>
@@ -277,13 +272,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54223000" />
+    <option name="totallyTimeSpent" value="55231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -635,14 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Form/EventType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-116">
@@ -682,7 +668,7 @@
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#46#103#0#PHP" expanded="true" />
           </folding>
@@ -691,11 +677,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Form/RegisterFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="246">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
             <element signature="e#40#80#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="15" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
