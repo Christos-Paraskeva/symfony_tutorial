@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Yoda\UserBundle\Entity\User;
+use Yoda\UserBundle\Form\RegisterFormType;
 
 
 class RegisterController extends Controller
@@ -18,28 +19,18 @@ class RegisterController extends Controller
     public function registerAction(Request $request)
     {
         // can set some default data for form
-        $user = new User();
-        $user->setUsername('Christos');
+//        $user = new User();
+//        $user->setUsername('Christos');
 
-        // refactor this out to a different file?
-
-        $form = $this->createFormBuilder($user, array(
-            'data_class' => 'Yoda\UserBundle\Entity\User',
-        ))
-            ->add('username', 'text')
-            ->add('email', 'email')
-            ->add('password', 'repeated', array(
-                'type' => 'password',
-            ))
-
-            ->getForm()
-        ;
+        // the second argument here could be the default $user variable above
+        $form = $this->createForm(new RegisterFormType(), null);
 
         $form->handleRequest($request);
 
         if ($form->isValid()) {
             $user = $form->getData();
-            $user->setPassword($this->encodePassword($user, $user->getPassword()));
+            $user->setPassword($this->encodePassword($user, $user->getPlainPassword()));
+            var_dump($user);die;
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();

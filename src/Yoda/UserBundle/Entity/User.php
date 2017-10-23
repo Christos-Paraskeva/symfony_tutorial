@@ -56,6 +56,8 @@ class User implements AdvancedUserInterface, Serializable
      */
     private $email;
 
+    private $plainPassword;
+
     public function serialize()
     {
         return serialize(array(
@@ -183,7 +185,7 @@ class User implements AdvancedUserInterface, Serializable
      */
     public function eraseCredentials()
     {
-        // TODO: Implement eraseCredentials() method.
+        $this->setPlainPassword(null);
     }
 
     public function getIsActive()
@@ -241,4 +243,14 @@ class User implements AdvancedUserInterface, Serializable
     {
         return $this->email;
     }
+
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+    public function setPlainPassword($plainPassword)
+    {
+        $this->plainPassword = $plainPassword;
+        return $this; }
+
 }
