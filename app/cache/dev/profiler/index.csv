@@ -205,3 +205,16 @@ c5b5d3,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508757771
 ccc68e,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508757771,,404
 61a4ac,127.0.0.1,POST,http://127.0.0.1:8000/register,1508757785,,302
 1b849a,127.0.0.1,GET,http://127.0.0.1:8000/,1508757785,,200
+5a2930,127.0.0.1,GET,http://127.0.0.1:8000/register,1508758004,,200
+8dd74f,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758004,3c168d,200
+3c168d,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758004,,404
+8785c4,127.0.0.1,GET,http://127.0.0.1:8000/logout,1508758008,,302
+55f640,127.0.0.1,GET,http://127.0.0.1:8000/,1508758008,,200
+c9128b,127.0.0.1,GET,http://127.0.0.1:8000/register,1508758012,,200
+67cf57,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758012,3dbf94,200
+3dbf94,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758012,,404
+bec996,127.0.0.1,POST,http://127.0.0.1:8000/register,1508758024,,200
+7058bf,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758024,8974b9,200
+8974b9,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508758024,,404
+d6acd0,127.0.0.1,POST,http://127.0.0.1:8000/register,1508758037,,302
+abdb1b,127.0.0.1,GET,http://127.0.0.1:8000/,1508758037,,200

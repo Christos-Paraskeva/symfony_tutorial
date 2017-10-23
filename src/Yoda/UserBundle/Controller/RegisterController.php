@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Yoda\UserBundle\Entity\User;
 use Yoda\UserBundle\Form\RegisterFormType;
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 
 
 class RegisterController extends Controller
@@ -39,6 +40,8 @@ class RegisterController extends Controller
                 ->add('success', 'Welcome to the Events Page');
             ;
 
+            $this->authenticateUser($user);
+
             return $this->redirectToRoute('event');
         }
 
@@ -51,6 +54,13 @@ class RegisterController extends Controller
             ->getEncoder($user)
         ;
         return $encoder->encodePassword($plainPassword, $user->getSalt());
+    }
+
+    private function authenticateUser(User $user)
+    {
+        $providerKey = 'secured_area'; // your firewall name
+        $token = new UsernamePasswordToken($user, null, $providerKey, $user->getRoles());
+        $this->container->get('security.context')->setToken($token);
     }
 
 }
