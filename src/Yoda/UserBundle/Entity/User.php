@@ -5,6 +5,7 @@ namespace Yoda\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 use Serializable;
 
@@ -27,8 +28,8 @@ class User implements AdvancedUserInterface, Serializable
 
     /**
      * @var string
-     *
      * @ORM\Column(name="username", type="string", length=30)
+     * @Assert\NotBlank(message="A valid Username must be entered")
      */
     private $username;
 
