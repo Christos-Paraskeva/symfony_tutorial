@@ -127,3 +127,9 @@ cd1618,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751593
 77d477,127.0.0.1,POST,http://127.0.0.1:8000/register,1508751609,,200
 652a05,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751609,903efc,200
 903efc,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751609,,404
+2b88aa,127.0.0.1,POST,http://127.0.0.1:8000/register,1508751728,,200
+bfbd4e,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751728,971e35,200
+971e35,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751728,,404
+ef4426,127.0.0.1,POST,http://127.0.0.1:8000/register,1508751731,,200
+9a13ba,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751732,1902f0,200
+1902f0,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508751732,,404

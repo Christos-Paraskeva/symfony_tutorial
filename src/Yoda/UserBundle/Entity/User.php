@@ -60,6 +60,13 @@ class User implements AdvancedUserInterface, Serializable
      */
     private $email;
 
+    /**
+     * @Assert\NotBlank
+     * @Assert\Regex(
+     *     pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/",
+     *     message="Use 1 upper case letter, 1 lower case letter, and 1 number"
+     * )
+     */
     private $plainPassword;
 
     public function serialize()
