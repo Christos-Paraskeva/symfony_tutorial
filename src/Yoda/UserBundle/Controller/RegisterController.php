@@ -20,11 +20,11 @@ class RegisterController extends Controller
     public function registerAction(Request $request)
     {
         // can set some default data for form
-//        $user = new User();
-//        $user->setUsername('Christos');
+        $user = new User();
+        $user->setUsername('Christos');
 
-        // the second argument here could be the default $user variable above
-        $form = $this->createForm(new RegisterFormType(), null);
+        // the second argument here could be the default $user variable above / otherwise use null
+        $form = $this->createForm(new RegisterFormType(), $user);
 
         $form->handleRequest($request);
 
