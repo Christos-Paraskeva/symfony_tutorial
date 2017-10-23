@@ -234,3 +234,12 @@ b486e0,127.0.0.1,POST,http://127.0.0.1:8000/login_check,1508758197,,302
 caa970,127.0.0.1,GET,http://127.0.0.1:8000/login,1508758212,,200
 175ef7,127.0.0.1,POST,http://127.0.0.1:8000/login_check,1508758217,,302
 c2db6d,127.0.0.1,GET,http://127.0.0.1:8000/new,1508758217,,200
+97a4f8,127.0.0.1,GET,http://127.0.0.1:8000/register,1508763973,,200
+a220a0,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508763973,b5037a,200
+b5037a,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508763973,,404
+3e1a25,127.0.0.1,GET,http://127.0.0.1:8000/register,1508766240,,200
+3cb6ff,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508766241,ba96a2,200
+ba96a2,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508766241,,404
+32d2a0,127.0.0.1,POST,http://127.0.0.1:8000/register,1508766242,,200
+bafd04,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508766242,43d9ca,200
+43d9ca,127.0.0.1,GET,http://127.0.0.1:8000/bundles/user/css/login.css,1508766243,,404

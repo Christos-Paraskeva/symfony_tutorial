@@ -10,6 +10,13 @@ class RegisterControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
+        $container = self::$kernel->getContainer();
+        $em = $container->get('doctrine')->getManager();
+        $userRepo = $em->getRepository('UserBundle:User');
+        $userRepo->createQueryBuilder('u')
+            ->delete() ->getQuery() ->execute()
+        ;
+
         $crawler = $client->request('GET', '/register');
         $response = $client->getResponse();
 
@@ -19,7 +26,25 @@ class RegisterControllerTest extends WebTestCase
         $usernameVal = $crawler->filter('#user_register_username')
             ->attr('value') ;
         $this->assertEquals('Christos', $usernameVal);
-        
+
+        $form = $crawler->selectButton('Register!')->form();
+        $crawler = $client->submit($form);
+        $this->assertEquals(200, $client->getResponse()->getStatusCode()); $this->assertRegexp(
+        '/This value should not be blank/',
+        $client->getResponse()->getContent() );
+
+        $form = $crawler->selectButton('Register!')->form();
+        $form['user_register[username]'] = 'user20';
+        $form['user_register[email]'] = 'user20@user.com';
+        $form['user_register[plainPassword][first]'] = 'P3ssword';
+        $form['user_register[plainPassword][second]'] = 'P3ssword';
+        $crawler = $client->submit($form);
+
+        $this->assertTrue($client->getResponse()->isRedirect());
+        $client->followRedirect();
+        $this->assertContains(
+            'Welcome to the Events Page',
+            $client->getResponse()->getContent() );
     }
 
 }
