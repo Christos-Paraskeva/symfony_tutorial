@@ -7,8 +7,9 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Yoda\UserBundle\Entity\User;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 
-class LoadUsers implements FixtureInterface, ContainerAwareInterface
+class LoadUsers implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface
 {
     private $container;
 
@@ -34,6 +35,11 @@ class LoadUsers implements FixtureInterface, ContainerAwareInterface
 
         // the queries aren't done until now
         $manager->flush();
+    }
+
+    public function getOrder()
+    {
+        return 10;
     }
 
     private function encodePassword(User $user, $plainPassword)
