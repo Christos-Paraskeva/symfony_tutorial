@@ -64,10 +64,10 @@ class User extends \Yoda\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'id', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'username', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'password', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'roles', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'isActive', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'email', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'plainPassword'];
+            return ['__isInitialized__', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'id', 'events', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'username', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'password', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'roles', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'isActive', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'email', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'plainPassword'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'id', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'username', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'password', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'roles', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'isActive', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'email', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'plainPassword'];
+        return ['__isInitialized__', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'id', 'events', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'username', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'password', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'roles', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'isActive', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'email', '' . "\0" . 'Yoda\\UserBundle\\Entity\\User' . "\0" . 'plainPassword'];
     }
 
     /**
@@ -208,6 +208,28 @@ class User extends \Yoda\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getEvents()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEvents', []);
+
+        return parent::getEvents();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setEvents(\Doctrine\Common\Collections\ArrayCollection $events)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEvents', [$events]);
+
+        return parent::setEvents($events);
     }
 
     /**
