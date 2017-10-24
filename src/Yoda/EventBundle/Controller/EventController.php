@@ -7,8 +7,6 @@ use Yoda\EventBundle\Entity\Event;
 use Yoda\EventBundle\Form\EventType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 /**
@@ -268,23 +266,5 @@ class EventController extends Controller
             ->getForm()
         ;
     }
-
-    // using annotation for security instead
-
-    private function enforceUserSecurity($role = 'ROLE_USER')
-    {
-        if (!$this->getSecurityContext()->isGranted($role)) {
-            throw new AccessDeniedException('Need '.$role);
-        }
-    }
-
-    private function enforceOwnerSecurity(Event $event)
-    {
-        $user = $this->getUser();
-
-        if ($user != $event->getOwner()) {
-            throw new AccessDeniedException('You are not the owner!');
-        }
-    }
-
+    
 }
