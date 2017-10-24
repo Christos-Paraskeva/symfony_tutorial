@@ -23,6 +23,12 @@ class Event
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Yoda\UserBundle\Entity\User")
+     * @ORM\JoinColumn(onDelete="CASCADE")
+     */
+    protected $owner;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
@@ -97,6 +103,15 @@ class Event
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+    public function setOwner(\Yoda\UserBundle\Entity\User $owner)
+    {
+        $this->owner = $owner;
     }
 
     /**
