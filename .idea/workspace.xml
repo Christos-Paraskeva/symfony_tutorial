@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe09be12-c05f-4abd-bd6a-09fadfa7a0a3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/42/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/61/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c657223656e636f646550617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/61/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c657223656e636f646550617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c7/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65722361757468656e746963617465557365725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/c7/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c65722361757468656e746963617465557365725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d3/5b5b435d596f64615c5573657242756e646c655c436f6e74726f6c6c65725c5265676973746572436f6e74726f6c6c6572237265676973746572416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ed/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223656e666f7263655573657253656375726974795d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ed/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223656e666f7263655573657253656375726974795d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/9f/9f9eb6674870ad984f53e0bb98c86f95f5afb9ebe9915dbbd0c61410b4c61e30.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/DataFixtures/ORM/LoadEvents.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/DataFixtures/ORM/LoadEvents.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +49,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="EventController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+                <state relative-caret-position="2756">
+                  <caret line="288" column="56" lean-forward="false" selection-start-line="288" selection-start-column="56" selection-end-line="288" selection-end-column="56" />
                   <folding>
                     <element signature="e#47#92#0#PHP" expanded="true" />
                   </folding>
@@ -39,12 +61,46 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="230">
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/config/security.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
+                <state relative-caret-position="391">
                   <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#46#103#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoadUsers.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-12">
+                  <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#52#102#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -79,7 +135,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LoadEvents.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LoadEvents.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/DataFixtures/ORM/LoadEvents.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="156">
@@ -87,38 +143,6 @@
                   <folding>
                     <element signature="e#53#103#0#PHP" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoadUsers.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#52#102#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config_test.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -175,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Twig/EventExtension.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/_upcomingEvents.html.twig" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/UserBundle.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php" />
@@ -192,16 +215,17 @@
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Tests/Controller/EventControllerTest.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/phpunit.xml.dist" />
-        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Tests/Controller/RegisterControllerTest.php" />
         <option value="$PROJECT_DIR$/app/config/config_test.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/DataFixtures/ORM/LoadEvents.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
       </list>
     </option>
   </component>
@@ -254,6 +278,12 @@
             <path>
               <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="logs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -275,6 +305,48 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Event" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -282,7 +354,7 @@
               <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -334,7 +406,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68759000" />
+    <option name="totallyTimeSpent" value="70075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -414,13 +486,6 @@
         <state relative-caret-position="344">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -656,16 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="25" column="98" lean-forward="false" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
-          <folding>
-            <element signature="e#46#103#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Register/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -714,14 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Resources/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -740,31 +787,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding>
-            <element signature="e#52#102#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,6 +801,52 @@
           <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
             <element signature="e#53#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#52#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#46#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2756">
+          <caret line="288" column="56" lean-forward="false" selection-start-line="288" selection-start-column="56" selection-end-line="288" selection-end-column="56" />
+          <folding>
+            <element signature="e#47#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

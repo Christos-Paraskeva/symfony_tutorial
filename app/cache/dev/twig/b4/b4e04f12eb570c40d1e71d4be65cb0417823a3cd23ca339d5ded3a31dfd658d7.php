@@ -21,20 +21,20 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_639e64e1f68e7f51af7c711c541bbd62deaf63ad013927cc96aebb9ccc8098dc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_639e64e1f68e7f51af7c711c541bbd62deaf63ad013927cc96aebb9ccc8098dc->enter($__internal_639e64e1f68e7f51af7c711c541bbd62deaf63ad013927cc96aebb9ccc8098dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
+        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31->enter($__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_639e64e1f68e7f51af7c711c541bbd62deaf63ad013927cc96aebb9ccc8098dc->leave($__internal_639e64e1f68e7f51af7c711c541bbd62deaf63ad013927cc96aebb9ccc8098dc_prof);
+        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31->leave($__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_b5db075cfd032a9d385a4a8732a52a98457b0529fedf558099b3caf41c7d3804 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b5db075cfd032a9d385a4a8732a52a98457b0529fedf558099b3caf41c7d3804->enter($__internal_b5db075cfd032a9d385a4a8732a52a98457b0529fedf558099b3caf41c7d3804_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca->enter($__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -61,34 +61,41 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
         // line 16
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "name", array()), "html", null, true);
         echo "
-                    <a class=\"button\" href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_edit", array("id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
-        echo "\">edit</a>
-                </h1>
+
+                    ";
+        // line 18
+        if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "owner", array()))) {
+            // line 19
+            echo "                        <a class=\"button\" href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_edit", array("id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
+            echo "\">edit</a>
+                    ";
+        }
+        // line 21
+        echo "                </h1>
 
                 <dl>
                     <dt>where:</dt>
                     <dd>";
-        // line 22
+        // line 25
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "location", array()), "html", null, true);
         echo "</dd>
 
                     <dt>when:</dt>
                     <dd>";
-        // line 25
+        // line 28
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "time", array()), "g:ia / l M j, Y"), "html", null, true);
         echo "</dd>
 
                     <dt>what:</dt>
                     <dd>";
-        // line 28
+        // line 31
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "details", array()), "html", null, true);
         echo "</dd>
 
                     <dt>posted:</dt>
                     <dd>";
-        // line 31
+        // line 34
         echo twig_escape_filter($this->env, $this->env->getExtension('Yoda\EventBundle\Twig\EventExtension')->calculateAgo($this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "createdAt", array())), "html", null, true);
         echo "</dd>
 
@@ -104,7 +111,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
     </section>
 ";
         
-        $__internal_b5db075cfd032a9d385a4a8732a52a98457b0529fedf558099b3caf41c7d3804->leave($__internal_b5db075cfd032a9d385a4a8732a52a98457b0529fedf558099b3caf41c7d3804_prof);
+        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca->leave($__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca_prof);
 
     }
 
@@ -120,7 +127,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
     public function getDebugInfo()
     {
-        return array (  92 => 31,  86 => 28,  80 => 25,  74 => 22,  66 => 17,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -149,7 +156,10 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
             <section>
                 <h1>
                     {{ entity.name }}
-                    <a class=\"button\" href=\"{{ path('event_edit', {'id': entity.id}) }}\">edit</a>
+
+                    {% if app.user == entity.owner %}
+                        <a class=\"button\" href=\"{{ path('event_edit', {'id': entity.id}) }}\">edit</a>
+                    {% endif %}
                 </h1>
 
                 <dl>

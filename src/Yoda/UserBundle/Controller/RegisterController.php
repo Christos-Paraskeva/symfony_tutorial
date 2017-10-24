@@ -31,6 +31,7 @@ class RegisterController extends Controller
         if ($form->isValid()) {
             $user = $form->getData();
             $user->setPassword($this->encodePassword($user, $user->getPlainPassword()));
+            $user->setRoles(array('ROLE_ADMIN'));
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
