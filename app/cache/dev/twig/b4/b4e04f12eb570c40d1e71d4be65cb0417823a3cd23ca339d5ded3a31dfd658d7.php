@@ -21,20 +21,20 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5bbc920aad749ad76331e7412d939e8c03294509999ec0b5735c6b5d854b814d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5bbc920aad749ad76331e7412d939e8c03294509999ec0b5735c6b5d854b814d->enter($__internal_5bbc920aad749ad76331e7412d939e8c03294509999ec0b5735c6b5d854b814d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
+        $__internal_756811477fa6d7fe633a2b350c5e74813810311adae5947dd1b3c167e324a0ed = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_756811477fa6d7fe633a2b350c5e74813810311adae5947dd1b3c167e324a0ed->enter($__internal_756811477fa6d7fe633a2b350c5e74813810311adae5947dd1b3c167e324a0ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_5bbc920aad749ad76331e7412d939e8c03294509999ec0b5735c6b5d854b814d->leave($__internal_5bbc920aad749ad76331e7412d939e8c03294509999ec0b5735c6b5d854b814d_prof);
+        $__internal_756811477fa6d7fe633a2b350c5e74813810311adae5947dd1b3c167e324a0ed->leave($__internal_756811477fa6d7fe633a2b350c5e74813810311adae5947dd1b3c167e324a0ed_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6c9f6e2629c446e9c1a8b5ecf0496105b8b95aa6bb9b1c6205a6665e5fe459ff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6c9f6e2629c446e9c1a8b5ecf0496105b8b95aa6bb9b1c6205a6665e5fe459ff->enter($__internal_6c9f6e2629c446e9c1a8b5ecf0496105b8b95aa6bb9b1c6205a6665e5fe459ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e762b9fe7ad6e22f3e0a1d4bff4bf14ea676a19f7cea87ba8ce84fb8be0159fe = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e762b9fe7ad6e22f3e0a1d4bff4bf14ea676a19f7cea87ba8ce84fb8be0159fe->enter($__internal_e762b9fe7ad6e22f3e0a1d4bff4bf14ea676a19f7cea87ba8ce84fb8be0159fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -103,9 +103,41 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
                     <dt>who:</dt>
                     <dd>
+                        ";
+        // line 38
+        echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "attendees", array())), "html", null, true);
+        echo " attending!
+
                         <ul class=\"users\">
-                            <li>nobody yet!</li>
-                        </ul>
+                            ";
+        // line 41
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "attendees", array()));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["attendee"]) {
+            // line 42
+            echo "                                <li>";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["attendee"], "username", array()), "html", null, true);
+            echo "</li>
+                            ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 44
+            echo "                                <li>Nobody Yet! RSVP!</li>
+                            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['attendee'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 46
+        echo "                        </ul>
+                        <a href=\"";
+        // line 47
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_attend", array("id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
+        echo "\" class=\"btn btn-success btn-xs\">
+                            I totally want to go!
+                        </a>
                     </dd>
                 </dl>
             </section>
@@ -113,7 +145,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
     </section>
 ";
         
-        $__internal_6c9f6e2629c446e9c1a8b5ecf0496105b8b95aa6bb9b1c6205a6665e5fe459ff->leave($__internal_6c9f6e2629c446e9c1a8b5ecf0496105b8b95aa6bb9b1c6205a6665e5fe459ff_prof);
+        $__internal_e762b9fe7ad6e22f3e0a1d4bff4bf14ea676a19f7cea87ba8ce84fb8be0159fe->leave($__internal_e762b9fe7ad6e22f3e0a1d4bff4bf14ea676a19f7cea87ba8ce84fb8be0159fe_prof);
 
     }
 
@@ -129,7 +161,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
     public function getDebugInfo()
     {
-        return array (  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  137 => 47,  134 => 46,  127 => 44,  119 => 42,  114 => 41,  108 => 38,  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -179,9 +211,18 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
                     <dt>who:</dt>
                     <dd>
+                        {{ entity.attendees|length }} attending!
+
                         <ul class=\"users\">
-                            <li>nobody yet!</li>
+                            {% for attendee in entity.attendees %}
+                                <li>{{ attendee.username }}</li>
+                            {% else %}
+                                <li>Nobody Yet! RSVP!</li>
+                            {% endfor %}
                         </ul>
+                        <a href=\"{{ path('event_attend', {'id': entity.id}) }}\" class=\"btn btn-success btn-xs\">
+                            I totally want to go!
+                        </a>
                     </dd>
                 </dl>
             </section>

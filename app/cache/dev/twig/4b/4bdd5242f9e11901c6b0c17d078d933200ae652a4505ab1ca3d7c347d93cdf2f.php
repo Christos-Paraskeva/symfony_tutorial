@@ -21,20 +21,20 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_26b9b3dd22aceeb049d892942d159ae346759256f1b111cb154565a9b965dc1b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_26b9b3dd22aceeb049d892942d159ae346759256f1b111cb154565a9b965dc1b->enter($__internal_26b9b3dd22aceeb049d892942d159ae346759256f1b111cb154565a9b965dc1b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
+        $__internal_7bec74953af83e83172fe56c47dd7499ec1c1009d6d1a12a480f53cdef606ffc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7bec74953af83e83172fe56c47dd7499ec1c1009d6d1a12a480f53cdef606ffc->enter($__internal_7bec74953af83e83172fe56c47dd7499ec1c1009d6d1a12a480f53cdef606ffc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_26b9b3dd22aceeb049d892942d159ae346759256f1b111cb154565a9b965dc1b->leave($__internal_26b9b3dd22aceeb049d892942d159ae346759256f1b111cb154565a9b965dc1b_prof);
+        $__internal_7bec74953af83e83172fe56c47dd7499ec1c1009d6d1a12a480f53cdef606ffc->leave($__internal_7bec74953af83e83172fe56c47dd7499ec1c1009d6d1a12a480f53cdef606ffc_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_7bb19eb496927eb6b0b26b2d9d2f62db975dfbbcf3046963c4994e5554d8817c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7bb19eb496927eb6b0b26b2d9d2f62db975dfbbcf3046963c4994e5554d8817c->enter($__internal_7bb19eb496927eb6b0b26b2d9d2f62db975dfbbcf3046963c4994e5554d8817c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8b77240ad8d32509abbee58f5bd88aac113d1af92c746aac9d6aa4d509af82d5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8b77240ad8d32509abbee58f5bd88aac113d1af92c746aac9d6aa4d509af82d5->enter($__internal_8b77240ad8d32509abbee58f5bd88aac113d1af92c746aac9d6aa4d509af82d5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -65,19 +65,23 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
             <a class=\"button\" href=\"";
         // line 15
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_new");
-        echo "\">Create new event</a>
+        echo "\">Create new event
+            <a class=\"button\" href=\"";
+        // line 16
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_upcoming");
+        echo "\">Upcoming Events</a>
         </header>
 
         ";
-        // line 18
+        // line 19
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["entities"]) ? $context["entities"] : $this->getContext($context, "entities")));
         foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-            // line 19
+            // line 20
             echo "            <article>
                 <header class=\"map-container\">
                     <img src=\"http://maps.googleapis.com/maps/api/staticmap?center=";
-            // line 21
+            // line 22
             echo twig_escape_filter($this->env, twig_urlencode_filter($this->getAttribute($context["entity"], "location", array())), "html", null, true);
             echo "&markers=color:red%7Ccolor:red%7C";
             echo twig_escape_filter($this->env, twig_urlencode_filter($this->getAttribute($context["entity"], "location", array())), "html", null, true);
@@ -86,7 +90,7 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
                 <section>
                     <h3>
                         <a href=\"";
-            // line 25
+            // line 26
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_show", array("slug" => $this->getAttribute($context["entity"], "slug", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "name", array()), "html", null, true);
@@ -96,22 +100,25 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
                     <dl>
                         <dt>where:</dt>
                         <dd>";
-            // line 30
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "location", array()), "html", null, true);
             echo "</dd>
 
                         <dt>when:</dt>
                         <dd>";
-            // line 33
+            // line 34
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["entity"], "time", array()), "g:ia / l M j, Y"), "html", null, true);
             echo "</dd>
 
                         <dt>who:</dt>
-                        <dd>Todo # of people</dd>
+                        <dd>";
+            // line 37
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute($context["entity"], "attendees", array())), "html", null, true);
+            echo " attending!</dd>
 
                         <dt>posted:</dt>
                         <dd>";
-            // line 39
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getExtension('Yoda\EventBundle\Twig\EventExtension')->calculateAgo($this->getAttribute($context["entity"], "createdAt", array())), "html", null, true);
             echo " by ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["entity"], "owner", array()), "username", array()), "html", null, true);
@@ -124,11 +131,11 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 44
+        // line 45
         echo "    </section>
 ";
         
-        $__internal_7bb19eb496927eb6b0b26b2d9d2f62db975dfbbcf3046963c4994e5554d8817c->leave($__internal_7bb19eb496927eb6b0b26b2d9d2f62db975dfbbcf3046963c4994e5554d8817c_prof);
+        $__internal_8b77240ad8d32509abbee58f5bd88aac113d1af92c746aac9d6aa4d509af82d5->leave($__internal_8b77240ad8d32509abbee58f5bd88aac113d1af92c746aac9d6aa4d509af82d5_prof);
 
     }
 
@@ -144,7 +151,7 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
 
     public function getDebugInfo()
     {
-        return array (  128 => 44,  115 => 39,  106 => 33,  100 => 30,  90 => 25,  81 => 21,  77 => 19,  73 => 18,  67 => 15,  61 => 11,  55 => 9,  50 => 7,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  135 => 45,  122 => 40,  116 => 37,  110 => 34,  104 => 31,  94 => 26,  85 => 22,  81 => 20,  77 => 19,  71 => 16,  67 => 15,  61 => 11,  55 => 9,  50 => 7,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,7 +178,8 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
 
     <section class=\"events\">
         <header id=\"menu\">
-            <a class=\"button\" href=\"{{ path('event_new') }}\">Create new event</a>
+            <a class=\"button\" href=\"{{ path('event_new') }}\">Create new event
+            <a class=\"button\" href=\"{{ path('event_upcoming') }}\">Upcoming Events</a>
         </header>
 
         {% for entity in entities %}
@@ -192,7 +200,7 @@ class __TwigTemplate_20abcb9b71c753a8b7ad47534110dd66a9d98c0903d3f68f87494a5a835
                         <dd>{{ entity.time | date('g:ia / l M j, Y') }}</dd>
 
                         <dt>who:</dt>
-                        <dd>Todo # of people</dd>
+                        <dd>{{ entity.attendees|length }} attending!</dd>
 
                         <dt>posted:</dt>
                         <dd>{{ entity.createdAt|ago }} by {{ entity.owner.username }}</dd>

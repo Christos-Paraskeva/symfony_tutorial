@@ -13,6 +13,10 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class Event
 {
+    public function __construct()
+    {
+        $this->attendees = new ArrayCollection();
+    }
     /**
      * @var integer
      *
@@ -29,6 +33,11 @@ class Event
      * @ORM\JoinColumn(onDelete="CASCADE")
      */
     protected $owner;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Yoda\UserBundle\Entity\User")
+     */
+    protected $attendees;
 
     /**
      * @var string
@@ -95,6 +104,11 @@ class Event
         $this->name = $name;
 
         return $this;
+    }
+
+    public function getAttendees()
+    {
+        return $this->attendees;
     }
 
     /**

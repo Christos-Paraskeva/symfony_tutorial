@@ -26,3 +26,14 @@ event_delete:
     pattern:  /{id}/delete
     defaults: { _controller: "EventBundle:Event:delete" }
     requirements: { _method: post|delete }
+
+event_upcoming:
+    pattern:  /upcoming
+    defaults: { _controller: "EventBundle:Event:upcoming" }
+
+event_attend:
+    pattern: /{id}/attend
+    defaults: { _controller: "EventBundle:Event:attend" }
+event_unattend:
+    pattern: /{id}/unattend
+    defaults: { _controller: "EventBundle:Event:unattend" }

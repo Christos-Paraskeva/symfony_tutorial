@@ -141,6 +141,44 @@ class EventController extends Controller
     }
 
     /**
+     * @Template
+     */
+    public function upcomingAction()
+    {
+        $userName = $this->getUser()->getUsername();
+        $em = $this->getDoctrine()->getManager();
+
+        $entities = $em->getRepository('EventBundle:Event')->getUpcomingEvents();
+
+        return array(
+            'userName' => $userName,
+            'entities' => $entities,
+        );
+    }
+
+    public function attendAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        /** @var $event \Yoda\EventBundle\Entity\Event */
+        $event = $em->getRepository('EventBundle:Event')->find($id);
+        if (!$event) {
+            throw $this->createNotFoundException('No event found for id '.$id);
+        }
+
+        $event->getAttendees()->add($this->getUser());
+        $em->persist($event);
+        $em->flush();
+        $url = $this->generateUrl('event_show', array(
+            'slug' => $event->getSlug(), ));
+        return $this->redirect($url);
+    }
+
+    public function unattendAction($id)
+    {
+
+    }
+
+    /**
      * Displays a form to edit an existing Event entity.
      * @Security("has_role('ROLE_USER')")
      */

@@ -2,48 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe09be12-c05f-4abd-bd6a-09fadfa7a0a3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/upcoming.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/04/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74247570646174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/04/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74247570646174656441745d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/0b/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657444657461696c735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/0b/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657444657461696c735d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/17/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765745570646174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/17/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765745570646174656441745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/08/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572237570636f6d696e674576656e74735d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/18/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246c6f636174696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/18/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246c6f636174696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/1a/5b596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/1a/5b596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/22/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469734163746976655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/22/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469734163746976655d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/23/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/23/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745265706f7369746f72795d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/30/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745265706f7369746f72795d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/3f/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/3f/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246e616d655d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/41/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742373657444657461696c735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/41/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742373657444657461696c735d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/45/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7423736574536c75675d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/45/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7423736574536c75675d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/4d/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/59/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/59/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744f776e65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742474696d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742474696d655d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/7c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744c6f636174696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/7c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744c6f636174696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/7d/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722365646974416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/7e/5b5b435d596f64615c5573657242756e646c655c456e746974795c55736572246576656e74735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/7e/5b5b435d596f64615c5573657242756e646c655c456e746974795c55736572246576656e74735d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/81/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224706c61696e50617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/81/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224706c61696e50617373776f72645d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/83/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/83/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744e616d655d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/92/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/92/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/96/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657454696d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/96/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657454696d655d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9a/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246372656174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9a/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246372656174656441745d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9e/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742464657461696c735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/9e/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742464657461696c735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a5/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224726f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a5/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224726f6c65735d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744c6f636174696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744c6f636174696f6e5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7424736c75675d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7424736c75675d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b2/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223757064617465416374696f6e5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742373657454696d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/c6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742373657454696d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b7/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c657223637265617465437265617465466f726d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d5/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657449645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d5/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742367657449645d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d5/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d5/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74237365744f776e65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d8/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7423676574536c75675d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d8/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7423676574536c75675d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/db/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746545646974466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e0/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e2/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e2/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742469645d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744372656174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/f4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74236765744372656174656441745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/e9/5b5b435d596f64615c4576656e7442756e646c655c436f6e74726f6c6c65725c4576656e74436f6e74726f6c6c65722363726561746544656c657465466f726d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/doctrine/orm/Proxies/__CG__YodaUserBundleEntityUser.php" afterPath="$PROJECT_DIR$/app/cache/dev/doctrine/orm/Proxies/__CG__YodaUserBundleEntityUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4b/4bdd5242f9e11901c6b0c17d078d933200ae652a4505ab1ca3d7c347d93cdf2f.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/4b/4bdd5242f9e11901c6b0c17d078d933200ae652a4505ab1ca3d7c347d93cdf2f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/b4/b4e04f12eb570c40d1e71d4be65cb0417823a3cd23ca339d5ded3a31dfd658d7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/04/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74247570646174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/04/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74247570646174656441745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/07/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223657261736543726564656e7469616c735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/07/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223657261736543726564656e7469616c735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/18/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246c6f636174696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/18/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246c6f636174696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/18/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574557365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/18/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574557365726e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/1a/5b596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/1a/5b596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/1a/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657450617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/1a/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657450617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/20/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657449645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/20/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657449645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/22/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469734163746976655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/22/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469734163746976655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/24/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223756e73657269616c697a655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/24/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223756e73657269616c697a655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/29/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657449734163746976655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/29/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657449734163746976655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/38/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722470617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/3d/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224757365726e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/3f/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/3f/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/4d/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/4d/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/62/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574526f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/62/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574526f6c65735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/6b/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722469645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/6c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742474696d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/6c/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742474696d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/6c/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574526f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/6c/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574526f6c65735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/79/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657269616c697a655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/79/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657269616c697a655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/81/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224706c61696e50617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/81/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224706c61696e50617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/92/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/92/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224656d61696c5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/94/5b5b435d596f64615c5573657242756e646c655c456e746974795c55736572236973456e61626c65645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/94/5b5b435d596f64615c5573657242756e646c655c456e746974795c55736572236973456e61626c65645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/9a/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246372656174656441745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/9a/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246372656174656441745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/9b/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574456d61696c5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/9b/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574456d61696c5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/9e/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742464657461696c735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/9e/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742464657461696c735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/a5/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224726f6c65735d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/a5/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657224726f6c65735d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7424736c75675d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/a6/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e7424736c75675d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/af/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574557365726e616d655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/af/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574557365726e616d655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/b4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/b4/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e74246f776e65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/b8/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574506c61696e50617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/b8/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223736574506c61696e50617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/bb/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574456d61696c5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/bb/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574456d61696c5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/cb/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/d0/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657450617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/d0/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657450617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/da/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223697343726564656e7469616c734e6f6e457870697265645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/da/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223697343726564656e7469616c734e6f6e457870697265645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/e2/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742469645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/e2/5b5b435d596f64615c4576656e7442756e646c655c456e746974795c4576656e742469645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/e7/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722369734163636f756e744e6f6e457870697265645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/e7/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722369734163636f756e744e6f6e457870697265645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/e9/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657453616c745d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/e9/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722367657453616c745d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/ea/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657449734163746976655d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/ea/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722373657449734163746976655d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/ef/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722369734163636f756e744e6f6e4c6f636b65645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/ef/5b5b435d596f64615c5573657242756e646c655c456e746974795c557365722369734163636f756e744e6f6e4c6f636b65645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/annotations/f1/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574506c61696e50617373776f72645d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/test/annotations/f1/5b5b435d596f64615c5573657242756e646c655c456e746974795c5573657223676574506c61696e50617373776f72645d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/test/twig/20/203c87f6bd98951b2376386017989ee24c31e6db3967469738ad0a84640badeb.php" afterPath="$PROJECT_DIR$/app/cache/test/twig/20/203c87f6bd98951b2376386017989ee24c31e6db3967469738ad0a84640badeb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play.php" afterPath="$PROJECT_DIR$/play.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/test.log" afterPath="$PROJECT_DIR$/app/logs/test.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" afterPath="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,11 +105,21 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
+          <file leaf-file-name="EventRepository.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3769">
-                  <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+                <state relative-caret-position="264">
+                  <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
                   <folding>
                     <element signature="e#47#92#0#PHP" expanded="true" />
                   </folding>
@@ -68,24 +127,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/DefaultController.php">
+          <file leaf-file-name="upcoming.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/upcoming.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="216">
+                  <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/Controller.php">
+          <file leaf-file-name="event.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="263">
-                  <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#46#80#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="291">
+                  <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -93,27 +150,27 @@
           <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="33" column="81" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="81" />
+                <state relative-caret-position="173">
+                  <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="38" column="85" lean-forward="false" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
+                <state relative-caret-position="183">
+                  <caret line="36" column="73" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
+                <state relative-caret-position="1669">
                   <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
                   <folding>
                     <element signature="e#42#74#0#PHP" expanded="true" />
@@ -122,14 +179,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="play.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/play.php">
+          <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#7#52#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="242">
+                  <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-694">
+                  <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -137,34 +202,10 @@
           <file leaf-file-name="Event.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="150">
+                  <caret line="111" column="5" lean-forward="false" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
                   <folding>
                     <element signature="e#43#75#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="745">
-                  <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#46#89#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoadUsers.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/DataFixtures/ORM/LoadUsers.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-12">
-                  <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#52#102#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -199,7 +240,7 @@
           <file leaf-file-name="ReportController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/ReportController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
+                <state relative-caret-position="-98">
                   <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
@@ -223,7 +264,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Reporting/EventReportManager.php" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Twig/EventExtension.php" />
@@ -231,7 +271,6 @@
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/UserBundle.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/UserRepository.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/web/bundles/event/css/main.css" />
@@ -252,13 +291,16 @@
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/ReportController.php" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
         <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/Controller.php" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php" />
         <option value="$PROJECT_DIR$/play.php" />
         <option value="$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/upcoming.html.twig" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig" />
       </list>
     </option>
   </component>
@@ -338,7 +380,86 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routing" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony_tutorial_new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Yoda" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Event" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfony_tutorial_new" type="b2602c69:ProjectViewProjectNode" />
@@ -404,7 +525,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73411000" />
+    <option name="totallyTimeSpent" value="76788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -442,28 +563,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/_upcomingEvents.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -540,14 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -684,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -764,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/ReportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-98">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -775,16 +858,6 @@
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3769">
-          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#92#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,32 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="81" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="38" column="85" lean-forward="false" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/play.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -844,13 +891,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-694">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/upcoming.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/EventRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Yoda/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="1669">
           <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/config/routing/event.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="111" column="5" lean-forward="false" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+          <folding>
+            <element signature="e#43#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="170" column="8" lean-forward="false" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+          <folding>
+            <element signature="e#47#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Yoda/EventBundle/Resources/views/Event/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="36" column="73" lean-forward="false" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>

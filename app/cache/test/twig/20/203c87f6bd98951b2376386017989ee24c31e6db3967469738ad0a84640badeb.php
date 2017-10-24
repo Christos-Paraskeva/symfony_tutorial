@@ -21,20 +21,20 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810->enter($__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
+        $__internal_3e151272fa4e490f1ff7d185ff77cf3d70abd7d2ccaa05546728ea002d65a502 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3e151272fa4e490f1ff7d185ff77cf3d70abd7d2ccaa05546728ea002d65a502->enter($__internal_3e151272fa4e490f1ff7d185ff77cf3d70abd7d2ccaa05546728ea002d65a502_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810->leave($__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810_prof);
+        $__internal_3e151272fa4e490f1ff7d185ff77cf3d70abd7d2ccaa05546728ea002d65a502->leave($__internal_3e151272fa4e490f1ff7d185ff77cf3d70abd7d2ccaa05546728ea002d65a502_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351->enter($__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_495a7642f3e9e43f99fad3257cf96629fff98affde92d61e12c37191ee66e92d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_495a7642f3e9e43f99fad3257cf96629fff98affde92d61e12c37191ee66e92d->enter($__internal_495a7642f3e9e43f99fad3257cf96629fff98affde92d61e12c37191ee66e92d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -113,6 +113,8 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
                         <dd>";
             // line 39
             echo twig_escape_filter($this->env, $this->env->getExtension('Yoda\EventBundle\Twig\EventExtension')->calculateAgo($this->getAttribute($context["entity"], "createdAt", array())), "html", null, true);
+            echo " by ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["entity"], "owner", array()), "username", array()), "html", null, true);
             echo "</dd>
                     </dl>
                 </section>
@@ -126,7 +128,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
         echo "    </section>
 ";
         
-        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351->leave($__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351_prof);
+        $__internal_495a7642f3e9e43f99fad3257cf96629fff98affde92d61e12c37191ee66e92d->leave($__internal_495a7642f3e9e43f99fad3257cf96629fff98affde92d61e12c37191ee66e92d_prof);
 
     }
 
@@ -142,7 +144,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
     public function getDebugInfo()
     {
-        return array (  126 => 44,  115 => 39,  106 => 33,  100 => 30,  90 => 25,  81 => 21,  77 => 19,  73 => 18,  67 => 15,  61 => 11,  55 => 9,  50 => 7,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  128 => 44,  115 => 39,  106 => 33,  100 => 30,  90 => 25,  81 => 21,  77 => 19,  73 => 18,  67 => 15,  61 => 11,  55 => 9,  50 => 7,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -193,7 +195,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
                         <dd>Todo # of people</dd>
 
                         <dt>posted:</dt>
-                        <dd>{{ entity.createdAt|ago }}</dd>
+                        <dd>{{ entity.createdAt|ago }} by {{ entity.owner.username }}</dd>
                     </dl>
                 </section>
             </article>

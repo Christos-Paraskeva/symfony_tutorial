@@ -224,17 +224,6 @@ class User extends \Yoda\UserBundle\Entity\User implements \Doctrine\ORM\Proxy\P
     /**
      * {@inheritDoc}
      */
-    public function setEvents(\Doctrine\Common\Collections\ArrayCollection $events)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEvents', [$events]);
-
-        return parent::setEvents($events);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setUsername($username)
     {
 

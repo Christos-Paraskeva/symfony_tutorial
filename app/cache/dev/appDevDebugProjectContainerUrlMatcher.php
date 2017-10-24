@@ -199,6 +199,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_event_delete:
 
+        // event_upcoming
+        if ('/upcoming' === $pathinfo) {
+            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::upcomingAction',  '_route' => 'event_upcoming',);
+        }
+
+        // event_attend
+        if (preg_match('#^/(?P<id>[^/]++)/attend$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_attend')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::attendAction',));
+        }
+
+        // event_unattend
+        if (preg_match('#^/(?P<id>[^/]++)/unattend$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_unattend')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::unattendAction',));
+        }
+
         // event
         if ('' === rtrim($pathinfo, '/')) {
             if (substr($pathinfo, -1) !== '/') {

@@ -12,7 +12,8 @@
 
     <section class="events">
         <header id="menu">
-            <a class="button" href="{{ path('event_new') }}">Create new event</a>
+            <a class="button" href="{{ path('event_new') }}">Create new event
+            <a class="button" href="{{ path('event_upcoming') }}">Upcoming Events</a>
         </header>
 
         {% for entity in entities %}
@@ -33,7 +34,7 @@
                         <dd>{{ entity.time | date('g:ia / l M j, Y') }}</dd>
 
                         <dt>who:</dt>
-                        <dd>Todo # of people</dd>
+                        <dd>{{ entity.attendees|length }} attending!</dd>
 
                         <dt>posted:</dt>
                         <dd>{{ entity.createdAt|ago }} by {{ entity.owner.username }}</dd>
