@@ -21,20 +21,20 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_82991a955b08cefa1db066136457dcdf3b200fa32bd02d6a66555ac34e0344d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_82991a955b08cefa1db066136457dcdf3b200fa32bd02d6a66555ac34e0344d8->enter($__internal_82991a955b08cefa1db066136457dcdf3b200fa32bd02d6a66555ac34e0344d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
+        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810->enter($__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_82991a955b08cefa1db066136457dcdf3b200fa32bd02d6a66555ac34e0344d8->leave($__internal_82991a955b08cefa1db066136457dcdf3b200fa32bd02d6a66555ac34e0344d8_prof);
+        $__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810->leave($__internal_debbf4462b226113a44894365a68b6f30d414390b39f1aa7fe39444aba911810_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_57e62dbcb56587f8582de71948eac50b58a8358d1cc747441c124c4f46ea56d9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_57e62dbcb56587f8582de71948eac50b58a8358d1cc747441c124c4f46ea56d9->enter($__internal_57e62dbcb56587f8582de71948eac50b58a8358d1cc747441c124c4f46ea56d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351->enter($__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -45,34 +45,39 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
             echo "      <a class=\"link\" href=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("logout");
             echo "\">Logout</a>
+        <h3> Welcome, ";
+            // line 7
+            echo twig_escape_filter($this->env, (isset($context["userName"]) ? $context["userName"] : $this->getContext($context, "userName")), "html", null, true);
+            echo " </h3>
     ";
         } else {
-            // line 8
+            // line 9
             echo "        <a class=\"link\" href=\"";
             echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login_form");
             echo "\">Login</a>
     ";
         }
-        // line 10
+        // line 11
         echo "
+
     <section class=\"events\">
         <header id=\"menu\">
             <a class=\"button\" href=\"";
-        // line 13
+        // line 15
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_new");
         echo "\">Create new event</a>
         </header>
 
         ";
-        // line 16
+        // line 18
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["entities"]) ? $context["entities"] : $this->getContext($context, "entities")));
         foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-            // line 17
+            // line 19
             echo "            <article>
                 <header class=\"map-container\">
                     <img src=\"http://maps.googleapis.com/maps/api/staticmap?center=";
-            // line 19
+            // line 21
             echo twig_escape_filter($this->env, twig_urlencode_filter($this->getAttribute($context["entity"], "location", array())), "html", null, true);
             echo "&markers=color:red%7Ccolor:red%7C";
             echo twig_escape_filter($this->env, twig_urlencode_filter($this->getAttribute($context["entity"], "location", array())), "html", null, true);
@@ -81,7 +86,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
                 <section>
                     <h3>
                         <a href=\"";
-            // line 23
+            // line 25
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_show", array("slug" => $this->getAttribute($context["entity"], "slug", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "name", array()), "html", null, true);
@@ -91,13 +96,13 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
                     <dl>
                         <dt>where:</dt>
                         <dd>";
-            // line 28
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "location", array()), "html", null, true);
             echo "</dd>
 
                         <dt>when:</dt>
                         <dd>";
-            // line 31
+            // line 33
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["entity"], "time", array()), "g:ia / l M j, Y"), "html", null, true);
             echo "</dd>
 
@@ -106,7 +111,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
                         <dt>posted:</dt>
                         <dd>";
-            // line 37
+            // line 39
             echo twig_escape_filter($this->env, $this->env->getExtension('Yoda\EventBundle\Twig\EventExtension')->calculateAgo($this->getAttribute($context["entity"], "createdAt", array())), "html", null, true);
             echo "</dd>
                     </dl>
@@ -117,11 +122,11 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 44
         echo "    </section>
 ";
         
-        $__internal_57e62dbcb56587f8582de71948eac50b58a8358d1cc747441c124c4f46ea56d9->leave($__internal_57e62dbcb56587f8582de71948eac50b58a8358d1cc747441c124c4f46ea56d9_prof);
+        $__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351->leave($__internal_31b32f6ed6078ce970cdf7a5953221ae37689d9043f3003c4ab016e9e805b351_prof);
 
     }
 
@@ -137,7 +142,7 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
     public function getDebugInfo()
     {
-        return array (  121 => 42,  110 => 37,  101 => 31,  95 => 28,  85 => 23,  76 => 19,  72 => 17,  68 => 16,  62 => 13,  57 => 10,  51 => 8,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  126 => 44,  115 => 39,  106 => 33,  100 => 30,  90 => 25,  81 => 21,  77 => 19,  73 => 18,  67 => 15,  61 => 11,  55 => 9,  50 => 7,  45 => 6,  43 => 5,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -156,9 +161,11 @@ class __TwigTemplate_6177d5246bc7838ba5a205e76a7b7427db16ec9b20efc25d8a411619dc9
 
     {%  if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
       <a class=\"link\" href=\"{{ path('logout') }}\">Logout</a>
+        <h3> Welcome, {{ userName }} </h3>
     {% else %}
         <a class=\"link\" href=\"{{ path('login_form') }}\">Login</a>
     {% endif %}
+
 
     <section class=\"events\">
         <header id=\"menu\">

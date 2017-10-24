@@ -266,5 +266,5 @@ class EventController extends Controller
             ->getForm()
         ;
     }
-    
+
 }

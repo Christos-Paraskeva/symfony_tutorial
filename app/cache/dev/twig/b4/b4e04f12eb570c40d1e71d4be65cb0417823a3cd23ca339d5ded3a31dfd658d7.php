@@ -21,20 +21,20 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31->enter($__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
+        $__internal_c99287f4e040d9ed7ff39987e6cad8ee776bfb29e6dfa49602247cb2beb4c933 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c99287f4e040d9ed7ff39987e6cad8ee776bfb29e6dfa49602247cb2beb4c933->enter($__internal_c99287f4e040d9ed7ff39987e6cad8ee776bfb29e6dfa49602247cb2beb4c933_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31->leave($__internal_3cdcd45680d9f4e986859f27d2154d4855ec8d71667979965ec4daaee900ea31_prof);
+        $__internal_c99287f4e040d9ed7ff39987e6cad8ee776bfb29e6dfa49602247cb2beb4c933->leave($__internal_c99287f4e040d9ed7ff39987e6cad8ee776bfb29e6dfa49602247cb2beb4c933_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca->enter($__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_514b042515bd84cb086f4ab6e0093cfc87f0ea77e18ff152a28dc4cf5d177048 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_514b042515bd84cb086f4ab6e0093cfc87f0ea77e18ff152a28dc4cf5d177048->enter($__internal_514b042515bd84cb086f4ab6e0093cfc87f0ea77e18ff152a28dc4cf5d177048_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -97,6 +97,8 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
                     <dd>";
         // line 34
         echo twig_escape_filter($this->env, $this->env->getExtension('Yoda\EventBundle\Twig\EventExtension')->calculateAgo($this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "createdAt", array())), "html", null, true);
+        echo " by ";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "owner", array()), "username", array()), "html", null, true);
         echo "</dd>
 
                     <dt>who:</dt>
@@ -111,7 +113,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
     </section>
 ";
         
-        $__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca->leave($__internal_32645c3a0e2f1c2d9f1feabef9b292f5f2d39571ea97e4e436464db8a0e933ca_prof);
+        $__internal_514b042515bd84cb086f4ab6e0093cfc87f0ea77e18ff152a28dc4cf5d177048->leave($__internal_514b042515bd84cb086f4ab6e0093cfc87f0ea77e18ff152a28dc4cf5d177048_prof);
 
     }
 
@@ -173,7 +175,7 @@ class __TwigTemplate_c372c0850e49e05b637e1d3256a3ce3a8c40718c9fd89c9d061bc27b0ff
                     <dd>{{ entity.details }}</dd>
 
                     <dt>posted:</dt>
-                    <dd>{{ entity.createdAt|ago }}</dd>
+                    <dd>{{ entity.createdAt|ago }} by {{  entity.owner.username }}</dd>
 
                     <dt>who:</dt>
                     <dd>
