@@ -27,6 +27,9 @@ class EventController extends Controller
      */
     public function indexAction()
     {
+        // can use this to get username
+        $userName = $this->getUser()->getUsername();
+
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('EventBundle:Event')->findAll();
@@ -36,6 +39,7 @@ class EventController extends Controller
 //        var_dump($userRepo->findOneByUsernameOrEmail('wayne'));die;
 
         return array(
+            'userName' => $userName,
             'entities' => $entities,
         );
     }
