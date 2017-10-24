@@ -3,8 +3,6 @@
 namespace Yoda\EventBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use Yoda\EventBundle\Entity\Event;
 use Yoda\EventBundle\Form\EventType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
@@ -275,8 +273,7 @@ class EventController extends Controller
 
     private function enforceUserSecurity($role = 'ROLE_USER')
     {
-        $securityContext = $this->container->get('security.context');
-        if (!$securityContext->isGranted($role)) {
+        if (!$this->getSecurityContext()->isGranted($role)) {
             throw new AccessDeniedException('Need '.$role);
         }
     }
