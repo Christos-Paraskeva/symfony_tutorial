@@ -361,7 +361,7 @@ class appTestDebugProjectContainer extends Container
 
         $this->services['assetic.asset_manager'] = $instance = new \Assetic\Factory\LazyAssetManager($this->get('assetic.asset_factory'), array('twig' => new \Assetic\Factory\Loader\CachedFormulaLoader(new \Assetic\Extension\Twig\TwigFormulaLoader($this->get('twig'), $this->get('monolog.logger.assetic', ContainerInterface::NULL_ON_INVALID_REFERENCE)), new \Assetic\Cache\ConfigCache((__DIR__.'/assetic/config')), true)));
 
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'EventBundle', ($this->targetDirs[2].'/Resources/EventBundle/views'), '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'EventBundle', ($this->targetDirs[3].'/src/Yoda/EventBundle/Resources/views'), '/\\.[^.]+\\.twig$/'))), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'EventBundle', ($this->targetDirs[2].'/Resources/EventBundle/views'), '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'EventBundle', ($this->targetDirs[3].'/src/Bundle/EventBundle/Resources/views'), '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, '', ($this->targetDirs[2].'/Resources/views'), '/\\.[^.]+\\.twig$/'), 'twig');
 
         return $instance;
@@ -779,14 +779,14 @@ class appTestDebugProjectContainer extends Container
     {
         $a = $this->get('annotation_reader');
 
-        $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/src/Yoda/EventBundle/Entity'), 1 => ($this->targetDirs[3].'/src/Yoda/UserBundle/Entity')));
+        $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/src/Bundle/EventBundle/Entity'), 1 => ($this->targetDirs[3].'/src/Bundle/UserBundle/Entity')));
 
         $c = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
-        $c->addDriver($b, 'Yoda\\EventBundle\\Entity');
-        $c->addDriver($b, 'Yoda\\UserBundle\\Entity');
+        $c->addDriver($b, 'Bundle\\EventBundle\\Entity');
+        $c->addDriver($b, 'Bundle\\UserBundle\\Entity');
 
         $d = new \Doctrine\ORM\Configuration();
-        $d->setEntityNamespaces(array('EventBundle' => 'Yoda\\EventBundle\\Entity', 'UserBundle' => 'Yoda\\UserBundle\\Entity'));
+        $d->setEntityNamespaces(array('EventBundle' => 'Bundle\\EventBundle\\Entity', 'UserBundle' => 'Bundle\\UserBundle\\Entity'));
         $d->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
         $d->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
         $d->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
@@ -1002,11 +1002,11 @@ class appTestDebugProjectContainer extends Container
     /**
      * Gets the public 'event_report_manager' shared service.
      *
-     * @return \Yoda\EventBundle\Reporting\EventReportManager
+     * @return \Bundle\EventBundle\Reporting\EventReportManager
      */
     protected function getEventReportManagerService()
     {
-        return $this->services['event_report_manager'] = new \Yoda\EventBundle\Reporting\EventReportManager($this->get('doctrine.orm.default_entity_manager'), $this->get('router'));
+        return $this->services['event_report_manager'] = new \Bundle\EventBundle\Reporting\EventReportManager($this->get('doctrine.orm.default_entity_manager'), $this->get('router'));
     }
 
     /**
@@ -2038,7 +2038,7 @@ class appTestDebugProjectContainer extends Container
      */
     protected function getSecurity_EncoderFactoryService()
     {
-        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('Yoda\\UserBundle\\Entity\\User' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13))));
+        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('Bundle\\UserBundle\\Entity\\User' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13))));
     }
 
     /**
@@ -2104,7 +2104,7 @@ class appTestDebugProjectContainer extends Container
         $u = new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $g, $r, $o, 'secured_area', $s, $t, array('check_path' => 'login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $a, $d, NULL);
         $u->setRememberMeServices($p);
 
-        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($n, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $c), 'secured_area', $a, $d), 2 => $q, 3 => $u, 4 => new \Symfony\Component\Security\Http\Firewall\RememberMeListener($b, $p, $g, $a, $d, true, $r), 5 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59ef19ac3c33b1.10066730', $a, $g), 6 => new \Symfony\Component\Security\Http\Firewall\SwitchUserListener($b, $c, $this->get('security.user_checker.secured_area'), 'secured_area', $h, $a, '_switch_user', 'ROLE_ALLOWED_TO_SWITCH', $d), 7 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $h, $n, $g)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $o, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($f, $o, 'login_form', false), NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($n, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $c), 'secured_area', $a, $d), 2 => $q, 3 => $u, 4 => new \Symfony\Component\Security\Http\Firewall\RememberMeListener($b, $p, $g, $a, $d, true, $r), 5 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59ef64977ec1e9.06543226', $a, $g), 6 => new \Symfony\Component\Security\Http\Firewall\SwitchUserListener($b, $c, $this->get('security.user_checker.secured_area'), 'secured_area', $h, $a, '_switch_user', 'ROLE_ALLOWED_TO_SWITCH', $d), 7 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $h, $n, $g)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $o, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($f, $o, 'login_form', false), NULL, NULL, $a, false));
     }
 
     /**
@@ -2948,11 +2948,11 @@ class appTestDebugProjectContainer extends Container
     /**
      * Gets the public 'twig.event_extension' shared service.
      *
-     * @return \Yoda\EventBundle\Twig\EventExtension
+     * @return \Bundle\EventBundle\Twig\EventExtension
      */
     protected function getTwig_EventExtensionService()
     {
-        return $this->services['twig.event_extension'] = new \Yoda\EventBundle\Twig\EventExtension();
+        return $this->services['twig.event_extension'] = new \Bundle\EventBundle\Twig\EventExtension();
     }
 
     /**
@@ -2979,8 +2979,8 @@ class appTestDebugProjectContainer extends Container
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views'), 'Twig');
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/swiftmailer-bundle/Resources/views'), 'Swiftmailer');
         $instance->addPath(($this->targetDirs[3].'/vendor/doctrine/doctrine-bundle/Resources/views'), 'Doctrine');
-        $instance->addPath(($this->targetDirs[3].'/src/Yoda/EventBundle/Resources/views'), 'Event');
-        $instance->addPath(($this->targetDirs[3].'/src/Yoda/UserBundle/Resources/views'), 'User');
+        $instance->addPath(($this->targetDirs[3].'/src/Bundle/EventBundle/Resources/views'), 'Event');
+        $instance->addPath(($this->targetDirs[3].'/src/Bundle/UserBundle/Resources/views'), 'User');
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views'), 'WebProfiler');
         $instance->addPath(($this->targetDirs[3].'/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views'), 'SensioDistribution');
         $instance->addPath(($this->targetDirs[2].'/Resources/views'));
@@ -3199,7 +3199,7 @@ class appTestDebugProjectContainer extends Container
     {
         $a = $this->get('security.user_checker.secured_area');
 
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.database_users'), $a, 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider($a, 'Order 1138', 'secured_area'), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59ef19ac3c33b1.10066730')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.database_users'), $a, 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider($a, 'Order 1138', 'secured_area'), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59ef64977ec1e9.06543226')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 
@@ -3357,8 +3357,8 @@ class appTestDebugProjectContainer extends Container
                 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle',
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
-                'EventBundle' => 'Yoda\\EventBundle\\EventBundle',
-                'UserBundle' => 'Yoda\\UserBundle\\UserBundle',
+                'EventBundle' => 'Bundle\\EventBundle\\EventBundle',
+                'UserBundle' => 'Bundle\\UserBundle\\UserBundle',
                 'DoctrineFixturesBundle' => 'Doctrine\\Bundle\\FixturesBundle\\DoctrineFixturesBundle',
                 'StofDoctrineExtensionsBundle' => 'Stof\\DoctrineExtensionsBundle\\StofDoctrineExtensionsBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
@@ -3408,13 +3408,13 @@ class appTestDebugProjectContainer extends Container
                 ),
                 'EventBundle' => array(
                     'parent' => NULL,
-                    'path' => ($this->targetDirs[3].'/src/Yoda/EventBundle'),
-                    'namespace' => 'Yoda\\EventBundle',
+                    'path' => ($this->targetDirs[3].'/src/Bundle/EventBundle'),
+                    'namespace' => 'Bundle\\EventBundle',
                 ),
                 'UserBundle' => array(
                     'parent' => NULL,
-                    'path' => ($this->targetDirs[3].'/src/Yoda/UserBundle'),
-                    'namespace' => 'Yoda\\UserBundle',
+                    'path' => ($this->targetDirs[3].'/src/Bundle/UserBundle'),
+                    'namespace' => 'Bundle\\UserBundle',
                 ),
                 'DoctrineFixturesBundle' => array(
                     'parent' => NULL,

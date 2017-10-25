@@ -16,8 +16,8 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="EventBundle">Yoda\EventBundle\EventBundle</parameter>
-      <parameter key="UserBundle">Yoda\UserBundle\UserBundle</parameter>
+      <parameter key="EventBundle">Bundle\EventBundle\EventBundle</parameter>
+      <parameter key="UserBundle">Bundle\UserBundle\UserBundle</parameter>
       <parameter key="DoctrineFixturesBundle">Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle</parameter>
       <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -67,13 +67,13 @@
       </parameter>
       <parameter key="EventBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle</parameter>
-        <parameter key="namespace">Yoda\EventBundle</parameter>
+        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle</parameter>
+        <parameter key="namespace">Bundle\EventBundle</parameter>
       </parameter>
       <parameter key="UserBundle" type="collection">
         <parameter key="parent">null</parameter>
-        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle</parameter>
-        <parameter key="namespace">Yoda\UserBundle</parameter>
+        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle</parameter>
+        <parameter key="namespace">Bundle\UserBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -747,11 +747,11 @@
     </parameter>
   </parameters>
   <services>
-    <service id="event_report_manager" class="Yoda\EventBundle\Reporting\EventReportManager">
+    <service id="event_report_manager" class="Bundle\EventBundle\Reporting\EventReportManager">
       <argument type="service" id="doctrine.orm.default_entity_manager"/>
       <argument type="service" id="router"/>
     </service>
-    <service id="twig.event_extension" class="Yoda\EventBundle\Twig\EventExtension">
+    <service id="twig.event_extension" class="Bundle\EventBundle\Twig\EventExtension">
       <tag name="twig.extension"/>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
@@ -1987,7 +1987,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>59ef01fff166d8.42822887</argument>
+            <argument>59ef648d995d45.14644728</argument>
           </service>
         </argument>
       </argument>
@@ -2376,7 +2376,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>59ef01fff166d8.42822887</argument>
+            <argument>59ef648d995d45.14644728</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2825,7 +2825,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>EventBundle</argument>
-                  <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle/Resources/views</argument>
+                  <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3084,8 +3084,8 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
-              <argument key="EventBundle">Yoda\EventBundle\Entity</argument>
-              <argument key="UserBundle">Yoda\UserBundle\Entity</argument>
+              <argument key="EventBundle">Bundle\EventBundle\Entity</argument>
+              <argument key="UserBundle">Bundle\UserBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3105,24 +3105,24 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle/Entity</argument>
-                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
-                  <argument>Yoda\EventBundle\Entity</argument>
+                  <argument>Bundle\EventBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle/Entity</argument>
-                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
-                  <argument>Yoda\UserBundle\Entity</argument>
+                  <argument>Bundle\UserBundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -3495,7 +3495,7 @@
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
       <argument type="collection">
-        <argument key="Yoda\UserBundle\Entity\User" type="collection">
+        <argument key="Bundle\UserBundle\Entity\User" type="collection">
           <argument key="class">%security.encoder.bcrypt.class%</argument>
           <argument key="arguments" type="collection">
             <argument>13</argument>
@@ -3613,11 +3613,11 @@
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/EventBundle/Resources/views</argument>
+        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Resources/views</argument>
         <argument>Event</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Yoda/UserBundle/Resources/views</argument>
+        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Resources/views</argument>
         <argument>User</argument>
       </call>
       <call method="addPath">

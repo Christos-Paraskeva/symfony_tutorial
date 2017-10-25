@@ -1,0 +1,16 @@
+parameters:
+#    event.example.class: Bundle\EventBundle\Example
+
+services:
+#    event.example:
+#        class: %event.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+     event_report_manager:
+         class: Bundle\EventBundle\Reporting\EventReportManager
+         arguments: ["@doctrine.orm.entity_manager", "@router"]
+
+     twig.event_extension:
+         class: Bundle\EventBundle\Twig\EventExtension
+         arguments: []
+         tags:
+          - { name: twig.extension }

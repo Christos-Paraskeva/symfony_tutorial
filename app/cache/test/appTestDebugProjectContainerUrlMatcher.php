@@ -148,17 +148,17 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
 
         // event_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<firstName>[^/]++)/(?P<count>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_homepage')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\DefaultController::indexAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_homepage')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\DefaultController::indexAction',));
         }
 
         // event_show
         if (preg_match('#^/(?P<slug>[^/]++)/show$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_show')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::showAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_show')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::showAction',));
         }
 
         // event_new
         if ('/new' === $pathinfo) {
-            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::newAction',  '_route' => 'event_new',);
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::newAction',  '_route' => 'event_new',);
         }
 
         // event_create
@@ -168,13 +168,13 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 goto not_event_create;
             }
 
-            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::createAction',  '_route' => 'event_create',);
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::createAction',  '_route' => 'event_create',);
         }
         not_event_create:
 
         // event_edit
         if (preg_match('#^/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_edit')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::editAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_edit')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::editAction',));
         }
 
         // event_update
@@ -184,7 +184,7 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 goto not_event_update;
             }
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_update')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::updateAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_update')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::updateAction',));
         }
         not_event_update:
 
@@ -195,9 +195,24 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 goto not_event_delete;
             }
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_delete')), array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::deleteAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_delete')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::deleteAction',));
         }
         not_event_delete:
+
+        // event_upcoming
+        if ('/upcoming' === $pathinfo) {
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::upcomingAction',  '_route' => 'event_upcoming',);
+        }
+
+        // event_attend
+        if (preg_match('#^/(?P<id>[^/]++)/attend$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_attend')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::attendAction',));
+        }
+
+        // event_unattend
+        if (preg_match('#^/(?P<id>[^/]++)/unattend$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_unattend')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::unattendAction',));
+        }
 
         // event
         if ('' === rtrim($pathinfo, '/')) {
@@ -205,41 +220,41 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
                 return $this->redirect($pathinfo.'/', 'event');
             }
 
-            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::indexAction',  '_route' => 'event',);
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::indexAction',  '_route' => 'event',);
         }
 
         // upcoming
         if ('/upcoming' === $pathinfo) {
-            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\EventController::upcomingEvents',  '_route' => 'upcoming',);
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::upcomingEvents',  '_route' => 'upcoming',);
         }
 
-        // yoda_event_report_showallevents
+        // _event_report_showallevents
         if ('/events/report/showAllEvents.csv' === $pathinfo) {
-            return array (  '_controller' => 'Yoda\\EventBundle\\Controller\\ReportController::showAllEventsAction',  '_route' => 'yoda_event_report_showallevents',);
+            return array (  '_controller' => 'Bundle\\EventBundle\\Controller\\ReportController::showAllEventsAction',  '_route' => '_event_report_showallevents',);
         }
 
         // user_register
         if ('/register' === $pathinfo) {
-            return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\RegisterController::registerAction',  '_route' => 'user_register',);
+            return array (  '_controller' => 'Bundle\\UserBundle\\Controller\\RegisterController::registerAction',  '_route' => 'user_register',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {
                 // login_form
                 if ('/login' === $pathinfo) {
-                    return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_form',);
+                    return array (  '_controller' => 'Bundle\\UserBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_form',);
                 }
 
                 // login_check
                 if ('/login_check' === $pathinfo) {
-                    return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::loginCheckAction',  '_route' => 'login_check',);
+                    return array (  '_controller' => 'Bundle\\UserBundle\\Controller\\SecurityController::loginCheckAction',  '_route' => 'login_check',);
                 }
 
             }
 
             // logout
             if ('/logout' === $pathinfo) {
-                return array (  '_controller' => 'Yoda\\UserBundle\\Controller\\SecurityController::logoutAction',  '_route' => 'logout',);
+                return array (  '_controller' => 'Bundle\\UserBundle\\Controller\\SecurityController::logoutAction',  '_route' => 'logout',);
             }
 
         }
