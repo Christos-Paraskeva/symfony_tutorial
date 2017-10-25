@@ -5,12 +5,14 @@ namespace Bundle\EventBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Bundle\UserBundle\Entity\User;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Event
  *
  * @ORM\Table(name="yoda_event")
  * @ORM\Entity(repositoryClass="Bundle\EventBundle\Entity\EventRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Event
 {
@@ -75,13 +77,25 @@ class Event
     private $slug;
 
     /**
-     * @Gedmo\Timestampable(on="create") * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime")
      */
     private $createdAt;
+
     /**
-     * @Gedmo\Timestampable(on="update") * @ORM\Column(type="datetime")
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(type="datetime")
      */
     private $updatedAt;
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function prePersist()
+    {
+        if (!$this->getCreatedAt()) {
+            $this->setCreatedAt(new \DateTime());
+        }
+    }
 
 
     /**
@@ -217,6 +231,11 @@ class Event
     public function setSlug($slug)
     {
         $this->slug = $slug;
+    }
+
+    public function setCreatedAt($time)
+    {
+        $this->createdAt = $time;
     }
 
     /**
