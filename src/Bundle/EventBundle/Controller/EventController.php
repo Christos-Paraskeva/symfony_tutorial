@@ -129,9 +129,7 @@ class EventController extends Controller
         $entity = $em->getRepository('EventBundle:Event')
             ->findOneBy(array('slug' => $slug));
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Event entity.');
-        }
+        $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
 
         $deleteForm = $this->createDeleteForm($entity->getId());
 
@@ -161,9 +159,8 @@ class EventController extends Controller
         $em = $this->getDoctrine()->getManager();
         /** @var $event \Bundle\EventBundle\Entity\Event */
         $event = $em->getRepository('EventBundle:Event')->find($id);
-        if (!$event) {
-            throw $this->createNotFoundException('No event found for id '.$id);
-        }
+
+        $this->checkForNotFoundException($event, 'No event found for id '.$id);
 
         if (!$event->hasAttendee($this->getUser())) {
             $event->getAttendees()->add($this->getUser());
@@ -182,9 +179,9 @@ class EventController extends Controller
         $em = $this->getDoctrine()->getManager();
         /** @var $event \Bundle\EventBundle\Entity\Event */
         $event = $em->getRepository('EventBundle:Event')->find($id);
-        if (!$event) {
-            throw $this->createNotFoundException('No event found for id '.$id);
-        }
+
+        $this->checkForNotFoundException($event, 'No event found for id '.$id);
+
 //        var_dump($event->hasAttendee($this->getUser()));
 
         if (!$event->hasAttendee($this->getUser())) {
@@ -213,9 +210,7 @@ class EventController extends Controller
 
         $entity = $em->getRepository('EventBundle:Event')->find($id);
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Event entity.');
-        }
+        $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
 
         $this->enforceOwnerSecurity($entity);
 
@@ -261,9 +256,7 @@ class EventController extends Controller
 
         $entity = $em->getRepository('EventBundle:Event')->find($id);
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Event entity.');
-        }
+        $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
 
         $this->enforceOwnerSecurity($entity);
 
@@ -298,9 +291,7 @@ class EventController extends Controller
             $em = $this->getDoctrine()->getManager();
             $entity = $em->getRepository('EventBundle:Event')->find($id);
 
-            if (!$entity) {
-                throw $this->createNotFoundException('Unable to find Event entity.');
-            }
+            $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
 
             $this->enforceOwnerSecurity($entity);
 

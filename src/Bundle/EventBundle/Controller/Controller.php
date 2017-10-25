@@ -33,4 +33,12 @@ class Controller extends BaseController
             throw new AccessDeniedException('Need '.$role);
         }
     }
+
+    public function checkForNotFoundException($entity, $message)
+    {
+        if (!$entity) {
+            throw $this->createNotFoundException($message);
+        }
+    }
+    
 }
