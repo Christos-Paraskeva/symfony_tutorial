@@ -37,3 +37,6 @@ event_attend:
 event_unattend:
     pattern: /{id}/unattend
     defaults: { _controller: "EventBundle:Event:unattend" }
+event_invite:
+    pattern: /{user_id}/invite
+    defaults: { _controller: "EventBundle:Event:invite" }

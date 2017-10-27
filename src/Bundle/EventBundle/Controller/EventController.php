@@ -9,6 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
+
 /**
  * Event controller.
  *
@@ -128,6 +129,8 @@ class EventController extends Controller
 
         $entity = $em->getRepository('EventBundle:Event')
             ->findOneBy(array('slug' => $slug));
+        $users = $em->getRepository('UserBundle:User')
+            ->findAll();
 
         $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
 
@@ -135,7 +138,39 @@ class EventController extends Controller
 
         return $this->render('EventBundle:Event:show.html.twig', array(
             'entity'      => $entity,
-            'delete_form' => $deleteForm->createView(),        ));
+            'users'       => $users,
+            'delete_form' => $deleteForm->createView(),
+        ));
+    }
+
+
+    public function inviteAction(Request $request, $user_id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $eventId = $request->query->get('event_id');
+
+        $event = $em->getRepository('EventBundle:Event')->find($eventId);
+        $user = $em->getRepository('UserBundle:User')->find($user_id);
+
+        $this->checkForNotFoundException($event, 'No event found for id '.$eventId);
+
+        if (!$event->hasInvitee($user)) {
+            $event->getInvitees()->add($user);
+        }
+
+        $em->persist($event);
+        $em->flush();
+
+        $url = $this->generateUrl('event_show', array(
+            'slug' => $event->getSlug(), ));
+        return $this->redirect($url);
+
+        //        $request->query->get('foo');
+//        var_dump($request->query->get('event_id'), $user_id);die;
+//        var_dump($user_id);die;
+//        $url = $this->generateUrl('event_show', array(
+//            'slug' => $event->getSlug(), ));
+//        return $this->redirect($url);
     }
 
     /**
@@ -175,20 +210,15 @@ class EventController extends Controller
 
     public function unattendAction($id)
     {
-        // unattend not removing user from event????
         $em = $this->getDoctrine()->getManager();
         /** @var $event \Bundle\EventBundle\Entity\Event */
         $event = $em->getRepository('EventBundle:Event')->find($id);
 
         $this->checkForNotFoundException($event, 'No event found for id '.$id);
 
-//        var_dump($event->hasAttendee($this->getUser()));
-
-        if (!$event->hasAttendee($this->getUser())) {
+        if ($event->hasAttendee($this->getUser())) {
             $event->getAttendees()->removeElement($this->getUser());
         }
-//        var_dump($event->getAttendees());
-//        var_dump($event->hasAttendee($this->getUser()));die;
 
         $em->persist($event);
         $em->flush();
@@ -211,7 +241,6 @@ class EventController extends Controller
         $entity = $em->getRepository('EventBundle:Event')->find($id);
 
         $this->checkForNotFoundException($entity, 'Unable to find Event entity.');
-
         $this->enforceOwnerSecurity($entity);
 
         $editForm = $this->createEditForm($entity);

@@ -21,15 +21,15 @@ class LoadUsers implements FixtureInterface, ContainerAwareInterface, OrderedFix
     public function load(ObjectManager $manager)
     {
         $user = new User();
-        $user->setUsername('darth');
-        $user->setEmail('darth@deathstar.com');
-        $user->setPassword($this->encodePassword($user, 'darthpass'));
+        $user->setUsername('chris');
+        $user->setEmail('chris@gmail.com');
+        $user->setPlainPassword('chrispass');
         $manager->persist($user);
 
         $admin = new User();
-        $admin->setUsername('wayne');
-        $admin->setEmail('wayne@deathstar.com');
-        $admin->setPassword($this->encodePassword($admin, 'waynepass'));
+        $admin->setUsername('chrisadmin');
+        $admin->setEmail('chrisadmin@gmail.com');
+        $admin->setPlainPassword('chrisadminpass');
         $admin->setRoles(array('ROLE_ADMIN'));
         $manager->persist($admin);
 

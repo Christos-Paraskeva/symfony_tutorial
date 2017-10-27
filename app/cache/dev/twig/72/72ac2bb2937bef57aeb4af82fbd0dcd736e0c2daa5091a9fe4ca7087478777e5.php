@@ -21,20 +21,20 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_844b98a8d41385f17afad1af305834d437446223eaf6a5c61ebeb8d91f3bb45c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_844b98a8d41385f17afad1af305834d437446223eaf6a5c61ebeb8d91f3bb45c->enter($__internal_844b98a8d41385f17afad1af305834d437446223eaf6a5c61ebeb8d91f3bb45c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
+        $__internal_60ee9e0f31de0d8fcdb2abf574489c47ebf0b02cccad738ac80b29089474207e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_60ee9e0f31de0d8fcdb2abf574489c47ebf0b02cccad738ac80b29089474207e->enter($__internal_60ee9e0f31de0d8fcdb2abf574489c47ebf0b02cccad738ac80b29089474207e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_844b98a8d41385f17afad1af305834d437446223eaf6a5c61ebeb8d91f3bb45c->leave($__internal_844b98a8d41385f17afad1af305834d437446223eaf6a5c61ebeb8d91f3bb45c_prof);
+        $__internal_60ee9e0f31de0d8fcdb2abf574489c47ebf0b02cccad738ac80b29089474207e->leave($__internal_60ee9e0f31de0d8fcdb2abf574489c47ebf0b02cccad738ac80b29089474207e_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_2e664f2ee10e7670613f09e1a820817b449be78e0e2bdef7f2f1c2e31a92125e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2e664f2ee10e7670613f09e1a820817b449be78e0e2bdef7f2f1c2e31a92125e->enter($__internal_2e664f2ee10e7670613f09e1a820817b449be78e0e2bdef7f2f1c2e31a92125e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_fd243b66fffaa2276d47c7ce2be58fc3d047926675e41a6d1ac70595a2e142a5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fd243b66fffaa2276d47c7ce2be58fc3d047926675e41a6d1ac70595a2e142a5->enter($__internal_fd243b66fffaa2276d47c7ce2be58fc3d047926675e41a6d1ac70595a2e142a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -152,7 +152,25 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
                             ";
         }
         // line 56
-        echo "                        </a>
+        echo "                        ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) ? $context["users"] : $this->getContext($context, "users")));
+        foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
+            // line 57
+            echo "                            <a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_invite", array("user_id" => $this->getAttribute($context["user"], "id", array()), "event_id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
+            echo "\" class=\"btn btn-warning btn-xs\">
+                            <li>";
+            // line 58
+            echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "username", array()), "html", null, true);
+            echo "</li>
+                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 60
+        echo "
                     </dd>
                 </dl>
             </section>
@@ -160,7 +178,7 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
     </section>
 ";
         
-        $__internal_2e664f2ee10e7670613f09e1a820817b449be78e0e2bdef7f2f1c2e31a92125e->leave($__internal_2e664f2ee10e7670613f09e1a820817b449be78e0e2bdef7f2f1c2e31a92125e_prof);
+        $__internal_fd243b66fffaa2276d47c7ce2be58fc3d047926675e41a6d1ac70595a2e142a5->leave($__internal_fd243b66fffaa2276d47c7ce2be58fc3d047926675e41a6d1ac70595a2e142a5_prof);
 
     }
 
@@ -176,7 +194,7 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
 
     public function getDebugInfo()
     {
-        return array (  155 => 56,  147 => 52,  139 => 48,  137 => 47,  134 => 46,  127 => 44,  119 => 42,  114 => 41,  108 => 38,  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  173 => 60,  165 => 58,  160 => 57,  155 => 56,  147 => 52,  139 => 48,  137 => 47,  134 => 46,  127 => 44,  119 => 42,  114 => 41,  108 => 38,  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -244,7 +262,11 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
                                     I totally want to go!
                                 </a>
                             {% endif %}
-                        </a>
+                        {% for user in users %}
+                            <a href=\"{{ path('event_invite', {'user_id': user.id, 'event_id': entity.id}) }}\" class=\"btn btn-warning btn-xs\">
+                            <li>{{ user.username }}</li>
+                        {% endfor %}
+
                     </dd>
                 </dl>
             </section>

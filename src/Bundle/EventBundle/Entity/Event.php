@@ -10,7 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 /**
  * Event
  *
- * @ORM\Table(name="yoda_event")
+ * @ORM\Table(name="event")
  * @ORM\Entity(repositoryClass="Bundle\EventBundle\Entity\EventRepository")
  * @ORM\HasLifecycleCallbacks
  */
@@ -19,6 +19,7 @@ class Event
     public function __construct()
     {
         $this->attendees = new ArrayCollection();
+        $this->invitees = new ArrayCollection();
     }
     /**
      * @var integer
@@ -41,6 +42,12 @@ class Event
      * @ORM\ManyToMany(targetEntity="Bundle\UserBundle\Entity\User")
      */
     protected $attendees;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Bundle\UserBundle\Entity\User")
+     * @ORM\JoinTable(name="event_invited_user")
+     */
+    protected $invitees;
 
     /**
      * @var string
@@ -124,6 +131,16 @@ class Event
     public function getAttendees()
     {
         return $this->attendees;
+    }
+
+    public function getInvitees()
+    {
+        return $this->invitees;
+    }
+
+    public function hasInvitee(User $user)
+    {
+        return $this->getInvitees()->contains($user);
     }
 
     /**

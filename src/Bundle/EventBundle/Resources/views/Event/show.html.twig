@@ -53,7 +53,11 @@
                                     I totally want to go!
                                 </a>
                             {% endif %}
-                        </a>
+                        {% for user in users %}
+                            <a href="{{ path('event_invite', {'user_id': user.id, 'event_id': entity.id}) }}" class="btn btn-warning btn-xs">
+                            <li>{{ user.username }}</li>
+                        {% endfor %}
+
                     </dd>
                 </dl>
             </section>

@@ -15,24 +15,24 @@ class LoadEvents implements FixtureInterface, OrderedFixtureInterface
     }
     public function load(ObjectManager $manager)
     {
-        $wayne = $manager->getRepository('UserBundle:User')
-            ->findOneByUsernameOrEmail('wayne')
+        $chrisadmin = $manager->getRepository('UserBundle:User')
+            ->findOneByUsernameOrEmail('chrisadmin')
         ;
 
         $event1 = new Event();
-        $event1->setName('Darth\'s Birthday Party!');
-        $event1->setLocation('Deathstar');
+        $event1->setName("Chris's Birthday Party");
+        $event1->setLocation('Somewhere');
         $event1->setTime(new \DateTime('tomorrow noon'));
-        $event1->setDetails('Ha! Darth HATES surprises!!!');
-        $event1->setOwner($wayne);
+        $event1->setDetails('Ha! Ha! !!!');
+        $event1->setOwner($chrisadmin);
         $manager->persist($event1);
 
         $event2 = new Event();
         $event2->setName('Rebellion Fundraiser Bake Sale!');
-        $event2->setLocation('Endor');
+        $event2->setLocation('Somewhere else');
         $event2->setTime(new \DateTime('Thursday noon'));
-        $event2->setDetails('Ewok pies! Support the rebellion!');
-        $event2->setOwner($wayne);
+        $event2->setDetails('Support the rebellion!');
+        $event2->setOwner($chrisadmin);
         $manager->persist($event2);
 
         // the queries aren't done until now

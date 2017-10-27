@@ -214,6 +214,11 @@ class appTestDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBun
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_unattend')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::unattendAction',));
         }
 
+        // event_invite
+        if (preg_match('#^/(?P<id>[^/]++)/invite$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'event_invite')), array (  '_controller' => 'Bundle\\EventBundle\\Controller\\EventController::inviteAction',));
+        }
+
         // event
         if ('' === rtrim($pathinfo, '/')) {
             if (substr($pathinfo, -1) !== '/') {

@@ -1,0 +1,9 @@
+parameters:
+
+services:
+     doctrine_user_listener:
+         class: Bundle\UserBundle\Doctrine\UserListener
+         arguments: ["@security.encoder_factory"]
+         tags:
+          - { name: doctrine.event_listener, event: prePersist }
+

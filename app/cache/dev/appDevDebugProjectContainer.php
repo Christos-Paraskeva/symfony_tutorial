@@ -90,6 +90,7 @@ class appDevDebugProjectContainer extends Container
             'doctrine_cache.providers.doctrine.orm.default_query_cache' => 'getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService',
             'doctrine_cache.providers.doctrine.orm.default_result_cache' => 'getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService',
             'doctrine_cache.stats_command' => 'getDoctrineCache_StatsCommandService',
+            'doctrine_user_listener' => 'getDoctrineUserListenerService',
             'event_report_manager' => 'getEventReportManagerService',
             'file_locator' => 'getFileLocatorService',
             'filesystem' => 'getFilesystemService',
@@ -702,6 +703,7 @@ class appDevDebugProjectContainer extends Container
         $f = new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this);
         $f->addEventSubscriber($d);
         $f->addEventSubscriber($e);
+        $f->addEventListener(array(0 => 'prePersist'), $this->get('doctrine_user_listener'));
         $f->addEventListener(array(0 => 'loadClassMetadata'), $this->get('doctrine.orm.default_listeners.attach_entity_listeners'));
 
         return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => NULL, 'dbname' => 'symfony_tutorial', 'user' => 'root', 'password' => NULL, 'charset' => 'UTF8', 'driverOptions' => array(), 'defaultTableOptions' => array()), $c, $f, array());
@@ -994,6 +996,16 @@ class appDevDebugProjectContainer extends Container
     protected function getDoctrineCache_StatsCommandService()
     {
         return $this->services['doctrine_cache.stats_command'] = new \Doctrine\Bundle\DoctrineCacheBundle\Command\StatsCommand();
+    }
+
+    /**
+     * Gets the public 'doctrine_user_listener' shared service.
+     *
+     * @return \Bundle\UserBundle\Doctrine\UserListener
+     */
+    protected function getDoctrineUserListenerService()
+    {
+        return $this->services['doctrine_user_listener'] = new \Bundle\UserBundle\Doctrine\UserListener($this->get('security.encoder_factory'));
     }
 
     /**
@@ -2100,7 +2112,7 @@ class appDevDebugProjectContainer extends Container
         $u = new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $g, $r, $o, 'secured_area', $s, $t, array('check_path' => 'login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $a, $d, NULL);
         $u->setRememberMeServices($p);
 
-        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($n, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $c), 'secured_area', $a, $d), 2 => $q, 3 => $u, 4 => new \Symfony\Component\Security\Http\Firewall\RememberMeListener($b, $p, $g, $a, $d, true, $r), 5 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59ef648d995d45.14644728', $a, $g), 6 => new \Symfony\Component\Security\Http\Firewall\SwitchUserListener($b, $c, $this->get('security.user_checker.secured_area'), 'secured_area', $h, $a, '_switch_user', 'ROLE_ALLOWED_TO_SWITCH', $d), 7 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $h, $n, $g)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $o, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($f, $o, 'login_form', false), NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.secured_area'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($n, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => $c), 'secured_area', $a, $d), 2 => $q, 3 => $u, 4 => new \Symfony\Component\Security\Http\Firewall\RememberMeListener($b, $p, $g, $a, $d, true, $r), 5 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '59f1e639736276.63573445', $a, $g), 6 => new \Symfony\Component\Security\Http\Firewall\SwitchUserListener($b, $c, $this->get('security.user_checker.secured_area'), 'secured_area', $h, $a, '_switch_user', 'ROLE_ALLOWED_TO_SWITCH', $d), 7 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $h, $n, $g)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $o, 'secured_area', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($f, $o, 'login_form', false), NULL, NULL, $a, false));
     }
 
     /**
@@ -3179,7 +3191,7 @@ class appDevDebugProjectContainer extends Container
     {
         $a = $this->get('security.user_checker.secured_area');
 
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.database_users'), $a, 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider($a, 'Order 1138', 'secured_area'), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59ef648d995d45.14644728')), true);
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('security.user.provider.concrete.database_users'), $a, 'secured_area', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider($a, 'Order 1138', 'secured_area'), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('59f1e639736276.63573445')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 

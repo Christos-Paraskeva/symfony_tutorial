@@ -14,7 +14,7 @@ use Serializable;
 /**
  * User
  *
- * @ORM\Table(name="yoda_user")
+ * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="Bundle\UserBundle\Entity\UserRepository")
  * @UniqueEntity(fields="username", message="That username is taken!")
  * @UniqueEntity(fields="email", message="That email is taken!")
