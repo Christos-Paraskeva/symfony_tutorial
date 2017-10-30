@@ -18,6 +18,7 @@
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="EventBundle">Bundle\EventBundle\EventBundle</parameter>
       <parameter key="UserBundle">Bundle\UserBundle\UserBundle</parameter>
+      <parameter key="ProfileBundle">Bundle\ProfileBundle\ProfileBundle</parameter>
       <parameter key="DoctrineFixturesBundle">Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle</parameter>
       <parameter key="StofDoctrineExtensionsBundle">Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -74,6 +75,11 @@
         <parameter key="parent">null</parameter>
         <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle</parameter>
         <parameter key="namespace">Bundle\UserBundle</parameter>
+      </parameter>
+      <parameter key="ProfileBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/ProfileBundle</parameter>
+        <parameter key="namespace">Bundle\ProfileBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
         <parameter key="parent">null</parameter>
@@ -1991,7 +1997,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>59f1e639736276.63573445</argument>
+            <argument>59f70956eea260.16895835</argument>
           </service>
         </argument>
       </argument>
@@ -2380,7 +2386,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>59f1e639736276.63573445</argument>
+            <argument>59f70956eea260.16895835</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3096,6 +3102,7 @@
             <argument type="collection">
               <argument key="EventBundle">Bundle\EventBundle\Entity</argument>
               <argument key="UserBundle">Bundle\UserBundle\Entity</argument>
+              <argument key="ProfileBundle">Bundle\ProfileBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -3117,6 +3124,7 @@
                       <argument type="collection">
                         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Entity</argument>
                         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/ProfileBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3129,10 +3137,24 @@
                       <argument type="collection">
                         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Entity</argument>
                         <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/ProfileBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>Bundle\UserBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/EventBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/UserBundle/Entity</argument>
+                        <argument>/Users/christos.paraskeva/Documents/my_projects/symfony_tutorial_new/src/Bundle/ProfileBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Bundle\ProfileBundle\Entity</argument>
                 </call>
               </service>
             </argument>

@@ -8,6 +8,7 @@ use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Doctrine\Common\Collections\ArrayCollection;
+use Bundle\ProfileBundle\Entity\Profile;
 
 use Serializable;
 
@@ -41,6 +42,11 @@ class User implements AdvancedUserInterface, Serializable
      * )
      */
     protected $events;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Bundle\ProfileBundle\Entity\Profile")
+     */
+    protected $profile;
 
     /**
      * @var string

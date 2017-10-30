@@ -21,20 +21,20 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9e6cb5e04b3d2956fa8b2b03b1ee0e8b17bf88f79f7c83047e10bdc1727736f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9e6cb5e04b3d2956fa8b2b03b1ee0e8b17bf88f79f7c83047e10bdc1727736f2->enter($__internal_9e6cb5e04b3d2956fa8b2b03b1ee0e8b17bf88f79f7c83047e10bdc1727736f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
+        $__internal_650a803a5aa36dd6aafbccf82ba2d67dfced47effca19c777b6c53e59a237537 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_650a803a5aa36dd6aafbccf82ba2d67dfced47effca19c777b6c53e59a237537->enter($__internal_650a803a5aa36dd6aafbccf82ba2d67dfced47effca19c777b6c53e59a237537_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EventBundle:Event:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_9e6cb5e04b3d2956fa8b2b03b1ee0e8b17bf88f79f7c83047e10bdc1727736f2->leave($__internal_9e6cb5e04b3d2956fa8b2b03b1ee0e8b17bf88f79f7c83047e10bdc1727736f2_prof);
+        $__internal_650a803a5aa36dd6aafbccf82ba2d67dfced47effca19c777b6c53e59a237537->leave($__internal_650a803a5aa36dd6aafbccf82ba2d67dfced47effca19c777b6c53e59a237537_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_457261ec64a7febd4e8fbe284d71eab80081167fb5d8d938bf700a6d2871710c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_457261ec64a7febd4e8fbe284d71eab80081167fb5d8d938bf700a6d2871710c->enter($__internal_457261ec64a7febd4e8fbe284d71eab80081167fb5d8d938bf700a6d2871710c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_177e080a37a3751a1d8c47e70a984d42127bc72c78d91989e0113b127d13fcc4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_177e080a37a3751a1d8c47e70a984d42127bc72c78d91989e0113b127d13fcc4->enter($__internal_177e080a37a3751a1d8c47e70a984d42127bc72c78d91989e0113b127d13fcc4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -160,30 +160,25 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
         $context['_seq'] = twig_ensure_traversable((isset($context["users"]) ? $context["users"] : $this->getContext($context, "users")));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
             // line 59
-            echo "                            ";
-            if (($this->getAttribute($context["user"], "id", array()) != $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array()))) {
+            echo "                        ";
+            if ((($this->getAttribute($context["user"], "id", array()) != $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "id", array())) || $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "hasAttendee", array(0 => $context["user"]), "method"))) {
                 // line 60
-                echo "                              <a href=\"";
+                echo "                        <a href=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("event_invite", array("user_id" => $this->getAttribute($context["user"], "id", array()), "event_id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
                 echo "\" class=\"btn btn-warning btn-xs\">
-                              <li>";
+                            <li>";
                 // line 61
                 echo twig_escape_filter($this->env, $this->getAttribute($context["user"], "username", array()), "html", null, true);
                 echo "</li>
-                                  ";
+                            ";
             }
             // line 63
-            echo "
-                                    ";
-            // line 65
-            echo "                                ";
-            // line 66
-            echo "                                    ";
+            echo "                            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 67
+        // line 64
         echo "
                     </dd>
                 </dl>
@@ -192,7 +187,7 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
     </section>
 ";
         
-        $__internal_457261ec64a7febd4e8fbe284d71eab80081167fb5d8d938bf700a6d2871710c->leave($__internal_457261ec64a7febd4e8fbe284d71eab80081167fb5d8d938bf700a6d2871710c_prof);
+        $__internal_177e080a37a3751a1d8c47e70a984d42127bc72c78d91989e0113b127d13fcc4->leave($__internal_177e080a37a3751a1d8c47e70a984d42127bc72c78d91989e0113b127d13fcc4_prof);
 
     }
 
@@ -208,7 +203,7 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
 
     public function getDebugInfo()
     {
-        return array (  187 => 67,  181 => 66,  179 => 65,  176 => 63,  171 => 61,  166 => 60,  163 => 59,  159 => 58,  155 => 56,  147 => 52,  139 => 48,  137 => 47,  134 => 46,  127 => 44,  119 => 42,  114 => 41,  108 => 38,  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  182 => 64,  176 => 63,  171 => 61,  166 => 60,  163 => 59,  159 => 58,  155 => 56,  147 => 52,  139 => 48,  137 => 47,  134 => 46,  127 => 44,  119 => 42,  114 => 41,  108 => 38,  99 => 34,  93 => 31,  87 => 28,  81 => 25,  75 => 21,  69 => 19,  67 => 18,  62 => 16,  53 => 12,  45 => 7,  40 => 4,  34 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -279,14 +274,11 @@ class __TwigTemplate_1e387b71bda3866bb0d0f8021ce5c06990106067edbadf7d4f065440ffc
                         <div> Invite </div>
 
                         {% for user in users %}
-                            {%  if user.id != app.user.id %}
-                              <a href=\"{{ path('event_invite', {'user_id': user.id, 'event_id': entity.id}) }}\" class=\"btn btn-warning btn-xs\">
-                              <li>{{ user.username }}</li>
-                                  {% endif %}
-
-                                    {#{{ dump(app.user.id) }}#}
-                                {#{{ dump(user.id) }}#}
-                                    {% endfor %}
+                        {%  if (user.id != app.user.id) or (entity.hasAttendee(user)) %}
+                        <a href=\"{{ path('event_invite', {'user_id': user.id, 'event_id': entity.id}) }}\" class=\"btn btn-warning btn-xs\">
+                            <li>{{ user.username }}</li>
+                            {% endif %}
+                            {% endfor %}
 
                     </dd>
                 </dl>

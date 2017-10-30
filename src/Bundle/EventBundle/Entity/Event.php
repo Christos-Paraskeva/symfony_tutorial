@@ -11,7 +11,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * Event
  *
  * @ORM\Table(name="event")
- * @ORM\Entity(repositoryClass="Bundle\EventBundle\Entity\EventRepository")
+ * @ORM\Entity(repositoryClass="Bundle\EventBundle\Entity\ProfileRepository")
  * @ORM\HasLifecycleCallbacks
  */
 class Event
@@ -40,6 +40,7 @@ class Event
 
     /**
      * @ORM\ManyToMany(targetEntity="Bundle\UserBundle\Entity\User")
+     * @ORM\JoinTable(name="event_attending_user")
      */
     protected $attendees;
 

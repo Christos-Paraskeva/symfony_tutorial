@@ -56,7 +56,7 @@
                         <div> Invite </div>
 
                         {% for user in users %}
-                        {%  if user.id != app.user.id %}
+                        {%  if (user.id != app.user.id) or (entity.hasAttendee(user)) %}
                         <a href="{{ path('event_invite', {'user_id': user.id, 'event_id': entity.id}) }}" class="btn btn-warning btn-xs">
                             <li>{{ user.username }}</li>
                             {% endif %}
